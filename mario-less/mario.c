@@ -3,17 +3,22 @@
 void space(int);
 void la(int);
 int main(void)
-{   int Height=0;
+{
+    int Height=0;
+    do
+    {
     printf("Height:");
     scanf("%d",&Height);
+    }
+    while(Height<1||Height>9);
 
-                for(int i = 1;i<=Height;i++)
-                {
-                    space(Height-i);
-                    la(i);
-                    printf("\n");
+    for(int i = 1;i<=Height;i++)
+    {
+        space(Height-i);
+        la(i);
+        printf("\n");
 
-                }
+    }
 
 
 }
