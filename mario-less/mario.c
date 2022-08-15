@@ -6,12 +6,15 @@ int main(void)
 {   int Height=0;
     printf("Height:");
     scanf("%d",&Height);
-    for(int i = 1;i<=Height;i++)
+    if(Height>0&&Height<9)
     {
-        space(Height-i);
-        la(i);
-        printf("\n");
+        for(int i = 1;i<=Height;i++)
+        {
+            space(Height-i);
+            la(i);
+            printf("\n");
 
+        }
     }
 
 }
