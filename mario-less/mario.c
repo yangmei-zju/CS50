@@ -10,8 +10,8 @@ int main(void)
     {
         space(Height-i);
         la(i);
-        printf("/n");
-        
+        printf("\n");
+
     }
 
 }
