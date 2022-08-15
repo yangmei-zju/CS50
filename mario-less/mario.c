@@ -1,11 +1,12 @@
 #include <cs50.h>
 #include <stdio.h>
-
+void space(int);
+void la(int);
 int main(void)
 {   int Height=0;
     printf("Height:");
     scanf("%d",&Height);
-
+    for(int i = 0;i)
 
 }
 void space(int n)
