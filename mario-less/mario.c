@@ -10,7 +10,7 @@ int main(void)
     printf("Height:");
     scanf("%d",&Height);
     }
-    while(Height<1||Height>9);
+    while(Height<1||Height>8);
 
     for(int i = 1;i<=Height;i++)
     {
