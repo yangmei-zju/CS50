@@ -6,5 +6,13 @@ int main(void)
     printf("Height:");
     scanf("%d",&Height);
 
-    
+
+}
+void space(int n)
+{
+    for(i=0;i<n;i++)
+    {
+        printf(" "),;
+    }
+
 }
