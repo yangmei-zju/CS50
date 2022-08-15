@@ -7,13 +7,13 @@ int main(void)
     printf("Height:");
     scanf("%d",&Height);
 
-        for(int i = 1;i<=Height;i++)
-        {
-            space(Height-i);
-            la(i);
-            printf("\n");
+                for(int i = 1;i<=Height;i++)
+                {
+                    space(Height-i);
+                    la(i);
+                    printf("\n");
 
-        }
+                }
 
 
 }
