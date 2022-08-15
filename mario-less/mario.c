@@ -7,8 +7,9 @@ int main(void)
     int Height=0;
     do
     {
-    printf("Height:");
-    scanf("%d",&Height);
+    //printf("Height:");
+    //scanf("%d",&Height);
+    Height = get_int("Height:");
     }
     while(Height<1||Height>8);
 
