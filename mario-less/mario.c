@@ -4,18 +4,18 @@ void space(int);
 void la(int);
 int main(void)
 {
-    int Height=0;
+    int Height = 0;
     do
     {
-    //printf("Height:");
-    //scanf("%d",&Height);
-    Height = get_int("Height:");
+        //printf("Height:");
+        //scanf("%d",&Height);
+        Height = get_int("Height:");
     }
-    while(Height<1||Height>8);
+    while (Height < 1 || Height > 8);
 
-    for(int i = 1;i<=Height;i++)
+    for (int i = 1; i<= Height; i++)
     {
-        space(Height-i);
+        space(Height - i);
         la(i);
         printf("\n");
 
@@ -25,7 +25,7 @@ int main(void)
 }
 void space(int n)
 {
-    for(int i = 0;i<n;i++)
+    for( int i = 0; i < n; i++)
     {
         printf(" ");
     }
@@ -33,7 +33,7 @@ void space(int n)
 }
 void la(int n)
 {
-    for(int i = 0;i<n;i++)
+    for(int i = 0; i < n; submiiti++)
     {
         printf("#");
     }
