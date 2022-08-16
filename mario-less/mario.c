@@ -33,7 +33,7 @@ void space(int n)
 }
 void la(int n)
 {
-    for(int i = 0; i < n; submiiti++)
+    for(int i = 0; i < n; i++)
     {
         printf("#");
     }
