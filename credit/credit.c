@@ -26,7 +26,11 @@ int main(void)
     int length = 0;
     length = i;
     sum = sum1 + sum2;
-    
+    if((num == 34 || num == 37)&& length = 15)
+    {
+        printf("AMEX\n");
+    }
+    else if(num >= 51 && num)
 
 
 }
