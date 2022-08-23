@@ -14,7 +14,7 @@ int main(void)
     for(i = 0;number>0;i++){
         a = number%10;
         number = number/10;
-        sum_a + =(a*2
+        if(i)
     }
 
 
