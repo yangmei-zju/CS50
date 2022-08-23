@@ -5,14 +5,14 @@ int main(void)
 {
     do
     {
-    number = get_long();
-    }while(number>0);
+    Number = get_long("Number:");
+    }while(Number>0);
 
     int sum1 = 0;
     int sum2 = 0;
     int a = 0;
     int sum = 0;
-    for(int i = 1;number>0;i++){
+    for(int i = 1,number = Number;number>0;i++){
         a = number%10;
         number = number/10;
         if(i%2==0)
@@ -26,6 +26,10 @@ int main(void)
     int length = 0;
     length = i;
     sum = sum1 + sum2;
+
+
+    while( )
+
     if((num == 34 || num == 37)&& length = 15)
     {
         printf("AMEX\n");
