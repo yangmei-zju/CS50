@@ -23,7 +23,10 @@ int main(void)
 
     }
 
-
+    int length = 0;
+    length = i;
+    sum = sum1 + sum2;
+    
 
 
 }
