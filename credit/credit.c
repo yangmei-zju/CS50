@@ -3,6 +3,16 @@
 
 int main(void)
 {
-    get_long()
+    do
+    {
+    Number = get_long();
+    }while(Number>0);
+
+    int count = 0;
+
+
+
+    
+
 
 }
