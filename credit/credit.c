@@ -26,6 +26,13 @@ int main(void)
     int length = 0;
     length = i;
     sum = sum1 + sum2;
+    if(sum%10=!0)
+    {
+        printf("INVALID");
+    }else
+    {
+
+
 
 
     while( )
@@ -36,5 +43,5 @@ int main(void)
     }
     else if(num >= 51 && num)
 
-
+    }
 }
