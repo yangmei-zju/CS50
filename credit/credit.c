@@ -12,7 +12,7 @@ int main(void)
     int sum2 = 0;
     int a = 0;
     int sum = 0;
-    for(i = 1;number>0;i++){
+    for(int i = 1;number>0;i++){
         a = number%10;
         number = number/10;
         if(i%2==0)
