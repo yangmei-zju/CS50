@@ -5,14 +5,16 @@ int main(void)
 {
     do
     {
-    Number = get_long();
-    }while(Number>0);
+    number = get_long();
+    }while(number>0);
 
     int sum = 0;
     int a = 0;
     int b = 0;
-    for(i = 0;i++){
-        
+    for(i = 0;number>0;i++){
+        a = number%10;
+        number = number/10;
+        sum_a + =(a*2
     }
 
 
