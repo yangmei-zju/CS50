@@ -16,7 +16,7 @@ int main(void)
     int i;
     long number;
     number = Number;
-    for( i = 1;number>=0;i++)
+    for( i = 1;number>0;i++)
     {
 
         a = number%10;
