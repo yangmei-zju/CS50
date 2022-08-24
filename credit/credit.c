@@ -33,6 +33,7 @@ int main(void)
                 int c2 = 0;
                 c1 = (a*2)/10;
                 c2 = (a*2)%10;
+                c = c1 + c2;
             }
 
 
@@ -46,12 +47,10 @@ int main(void)
     int length = 0;
     length = i - 1;
     sum = sum1 + sum2;
-    printf("%ld",sum2);
-    printf("%d",length);
-    printf("%ld",sum1);
+
 
     //如果sum整除10则进入下一步判断
-   /*if(sum%10==0)
+   if(sum%10==0)
     {
 
         //该数的前两位数b
@@ -83,5 +82,5 @@ int main(void)
     {
         printf("INVALID\n");
 
-    }*/
+    }
 }
