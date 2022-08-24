@@ -35,9 +35,9 @@ int main(void)
     int length = 0;
     length = i;
     sum = sum1 + sum2;
-    printf("ld/n",number);
+    printf("%ld",number);
     printf("%d",length);
-    printf("%)
+    printf("%ld",a);
 
     //如果sum整除10则进入下一步判断
    /*if(sum%10==0)
