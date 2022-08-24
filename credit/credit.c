@@ -15,9 +15,10 @@ int main(void)
     int sum = 0;
     int i;
     int number;
+    number = Number;
     for( i = 1;number>0;i++)
     {
-        number = Number;
+
         a = number%10;
         number = number/10;
         if(i%2==0)
