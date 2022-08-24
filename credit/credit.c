@@ -56,7 +56,7 @@ int main(void)
         //该数的前两位数b
         long b;
         b = Number;
-        while( b>10&&b<100)
+        do
         {
             b = b%10;
         }
