@@ -25,6 +25,7 @@ int main(void)
         {
             int c;
             c = a*2;
+            
             sum1 =sum1 + c ;
         }
         else
