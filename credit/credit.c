@@ -24,8 +24,18 @@ int main(void)
         if(i%2==0)
         {
             int c;
-            c = a*2;
-            
+            if(a<5){
+                c=a*2;
+            }
+            else
+            {
+                int c1;
+                int c2;
+                c1 = (a*2)/10;
+                c2 = (a*2)%10;
+            }
+
+
             sum1 =sum1 + c ;
         }
         else
