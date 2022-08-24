@@ -23,17 +23,19 @@ int main(void)
         number = number/10;
         if(i%2==0)
         {
-            sum1 + = (a*2);
+            int c;
+            c = a*2;
+            sum1 =sum1 + c ;
         }
         else
-            sum2 + = a;
+            sum2 = sum2 + a;
 
     }
 
     int length = 0;
     length = i;
     sum = sum1 + sum2;
-    if(sum%10=!0)
+    if(sum%10!=0)
     {
         printf("INVALID");
     }
