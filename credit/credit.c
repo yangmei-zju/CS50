@@ -43,7 +43,7 @@ int main(void)
         b = b%10;
     }
 
-    if((b == 34 || b == 37)&& length = 15)
+    if((b == 34 || b == 37)&& length == 15)
     {
         printf("AMEX\n");
     }
