@@ -23,14 +23,14 @@ int main(void)
         number = number/10;
         if(i%2==0)
         {
-            int c;
+            int c=0;
             if(a<5){
                 c=a*2;
             }
             else
             {
-                int c1;
-                int c2;
+                int c1 = 0;
+                int c2 = 0;
                 c1 = (a*2)/10;
                 c2 = (a*2)%10;
             }
