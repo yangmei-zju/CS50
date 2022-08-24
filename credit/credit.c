@@ -39,7 +39,7 @@ int main(void)
     //如果sum整除10则进入下一步判断
    if(sum%10!=0)
     {
-        printf("INVALID");
+        printf("INVALID\n");
     }
     else
     {
