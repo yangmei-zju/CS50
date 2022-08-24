@@ -58,8 +58,9 @@ int main(void)
         b = Number;
         do
         {
-            b = b%10;
+            b = b/10;
         }
+        while(b>100)
         printf("%ld\n",b);
         /*//根据b判断credit类型
         if((b == 34 || b == 37)&& length == 15)
