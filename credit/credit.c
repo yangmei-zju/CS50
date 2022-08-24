@@ -13,7 +13,9 @@ int main(void)
     int sum2 = 0;
     int a = 0;
     int sum = 0;
-    for(int i = 1,number = 0;number>0;i++)
+    int i;
+    int number;
+    for( i = 1;number>0;i++)
     {
         number = Number;
         a = number%10;
