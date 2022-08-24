@@ -37,33 +37,37 @@ int main(void)
     sum = sum1 + sum2;
 
     //如果sum整除10则进入下一步判断
-   if(sum%10!=0)
+   if(sum%10==0)
     {
-        printf("INVALID\n");
+
+        //该数的前两位数b
+        long b;
+        b = Number;
+        while( b>10&&b<100)
+        {
+            b = b%10;
+        }
+        //根据b判断credit类型
+        if((b == 34 || b == 37)&& length == 15)
+        {
+            printf("AMEX\n");
+        }
+        else if(b >= 51 && b<=55&&length == 16)
+        {
+            printf("MASTERCARD\n");
+        }
+        else if(b >= 40 && b <= 49&&(length == 13 ||length == 16))
+        {
+        printf("VISA\n");
+        }
+        else
+        {
+            printf("INVALID\n");
+        }
     }
     else
     {
-    //该数的前两位数b
-    long b;
-    b = Number;
-    while( b>10&&b<100)
-    {
-        b = b%10;
-    }
-    //根据b判断credit类型
-    if((b == 34 || b == 37)&& length == 15)
-    {
-        printf("AMEX\n");
-    }
-    else if(b >= 51 && b<=55&&length == 16)
-    {
-        printf("MASTERCARD\n");
-    }
-    else if(b >= 40 && b <= 49&&(length == 13 ||length == 16))
-    {
-     printf("VISA\n");
-    }
-
+        printf("INVALID\n");
 
     }
 }
