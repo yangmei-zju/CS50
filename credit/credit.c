@@ -13,7 +13,7 @@ int main(void)
     int sum2 = 0;
     int a = 0;
     int sum = 0;
-    for(int i = 1,int number = 0;number>0;i++)
+    for(int i = 1,number = 0;number>0;i++)
     {
         number = Number;
         a = number%10;
