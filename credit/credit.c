@@ -35,7 +35,7 @@ int main(void)
     int length = 0;
     length = i;
     sum = sum1 + sum2;
-    printf ( "%d",sum);
+    printf ( "%d/n",sum);
     //如果sum整除10则进入下一步判断
    /* if(sum%10!=0)
     {
