@@ -9,12 +9,12 @@ int main(void)
     Number = get_long("Number:");
     }while(Number<0);
     //计算偶数位的2倍和奇数位的总和sum以及长度length
-    int sum1 = 0;
-    int sum2 = 0;
-    int a = 0;
-    int sum = 0;
+    long sum1 = 0;
+    long sum2 = 0;
+    long a = 0;
+    long  sum = 0;
     int i;
-    int number;
+    long number;
     number = Number;
     for( i = 1;number>0;i++)
     {
@@ -44,7 +44,7 @@ int main(void)
     else
     {
     //该数的前两位数b
-    int b = Number;
+    longm b = Number;
     while( b>10&&b<100)
     {
         b = b%10;
