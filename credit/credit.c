@@ -3,10 +3,11 @@
 
 int main(void)
 {
+    long Number=0;
     do
     {
     Number = get_long("Number:");
-    }while(Number>0);
+    }while(Number<0);
 
     int sum1 = 0;
     int sum2 = 0;
