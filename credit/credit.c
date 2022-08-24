@@ -22,7 +22,7 @@ int main(void)
             sum1+ = (a*2);
         }
         else
-            sum2+ = a;
+            sum2 + = a;
 
     }
 
