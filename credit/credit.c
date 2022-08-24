@@ -8,7 +8,7 @@ int main(void)
     {
     Number = get_long("Number:");
     }while(Number<0);
-
+    //计算偶数位的2倍和奇数位的总和
     int sum1 = 0;
     int sum2 = 0;
     int a = 0;
