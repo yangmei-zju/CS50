@@ -86,3 +86,6 @@ int main(void)
 
     }
 }
+/*错误集合：1.没注意long与int
+2.对于循环的理解 while与do while
+*/

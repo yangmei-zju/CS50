@@ -38,3 +38,4 @@ void la(int n)
         printf("#");
     }
 }
+/*利用do while输入合适的数*/
