@@ -50,7 +50,7 @@ int main(void)
     }
     else if(b >= 51 && b<=55&&length == 16)
     {
-        printf("MASTERCARD\N");
+        printf("MASTERCARD\n");
     }
     else if(b >= 40 && b <= 49&&(length == 13 ||length == 16))
     {
