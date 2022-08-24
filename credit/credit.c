@@ -12,13 +12,15 @@ int main(void)
     int sum2 = 0;
     int a = 0;
     int sum = 0;
-    for(int i = 1,number = Number;number>0;i++){
+    for(int i = 1,number = Number;number>0;i++)
+    {
         a = number%10;
         number = number/10;
         if(i%2==0)
         {
             sum1+ = (a*2);
-        }else
+        }
+        else
             sum2+ = a;
 
     }
@@ -29,20 +31,32 @@ int main(void)
     if(sum%10=!0)
     {
         printf("INVALID");
-    }else
+    }
+    else
     {
 
 
 
 
+    int b = Number;
+    while( b>10&&b<100)
+    {
+        b = b%10;
+    }
 
-    while(number )
-
-    if((num == 34 || num == 37)&& length = 15)
+    if((b == 34 || b == 37)&& length = 15)
     {
         printf("AMEX\n");
     }
-    else if(num >= 51 && num)
+    else if(b >= 51 && b<=55&&length == 16)
+    {
+        printf("MASTERCARD\N");
+    }
+    else if(b >= 40 && b <= 49&&(length == 13 ||length == 16))
+    {
+     printf("VISA\n");
+    }
+
 
     }
 }
