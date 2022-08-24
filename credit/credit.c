@@ -35,16 +35,17 @@ int main(void)
     int length = 0;
     length = i;
     sum = sum1 + sum2;
-    printf ( "%ld/n",sum);
+
     //如果sum整除10则进入下一步判断
-   /* if(sum%10!=0)
+   if(sum%10!=0)
     {
         printf("INVALID");
     }
     else
     {
     //该数的前两位数b
-    longm b = Number;
+    long b;
+    b = Number;
     while( b>10&&b<100)
     {
         b = b%10;
@@ -64,5 +65,5 @@ int main(void)
     }
 
 
-    }*/
+    }
 }
