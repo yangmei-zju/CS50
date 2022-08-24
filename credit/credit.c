@@ -35,7 +35,8 @@ int main(void)
 
 
 
-    while( )
+
+    while(number )
 
     if((num == 34 || num == 37)&& length = 15)
     {
