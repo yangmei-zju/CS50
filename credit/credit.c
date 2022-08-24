@@ -60,7 +60,8 @@ int main(void)
         {
             b = b%10;
         }
-        //根据b判断credit类型
+        printf("%ld\n",b);
+        /*//根据b判断credit类型
         if((b == 34 || b == 37)&& length == 15)
         {
             printf("AMEX\n");
@@ -80,7 +81,7 @@ int main(void)
     }
     else
     {
-        printf("INVALID\n");
+        printf("INVALID\n");*/
 
     }
 }
