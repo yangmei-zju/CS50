@@ -49,7 +49,7 @@ int compute_score(string word)
         }
         else
         {
-            score = score;
+            score = score + 0;
         }
     }
 }
