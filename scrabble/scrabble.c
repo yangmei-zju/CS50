@@ -52,4 +52,5 @@ int compute_score(string word)
             score = score + 0;
         }
     }
+    return score;
 }
