@@ -41,7 +41,7 @@ int compute_score(string word)
     {
         if (issupper(word[i]))
         {
-            
+            score + =POINTS[]
 
         }
     }
