@@ -20,8 +20,8 @@ int main()
     words = count_words(text);
     sentences = count_sentences(text);
     letters = count_letters(text);
-    l = letters / words* 100;
-    s = sentences / words * 100;
+    l = (letters / words)* 100;
+    s = (sentences / words) * 100;
     index = 0.0588 * l - 0.296 * s - 15.8;
     printf("%d %d %d %f\n",words,letters,sentences,index);
 
