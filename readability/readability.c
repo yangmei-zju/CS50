@@ -21,8 +21,8 @@ int main()
     sentences = count_sentences(text);
     letters = strlen(text) + 1 - words - sentences;
 
-    l = letters / (words* 100);
-    s = sentences / (words * 100);
+    l = letters / words* 100;
+    s = sentences / words * 100;
     index = 0.0588 * l - 0.296 * s - 15.8;
     //printf("%d %d %d %f\n",words,letters,sentences,index);
 
@@ -34,7 +34,7 @@ int main()
     {
         printf("Grade 16+\n");
     }
-    else 
+    else
     {
         if (index >= (int)index + 0.5)
         {
