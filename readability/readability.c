@@ -23,7 +23,7 @@ int main()
     l = (float)letters / (float)words* 100;
     s = (float)sentences /(float) words * 100;
     index = 0.0588 * l - 0.296 * s - 15.8;
-    printf("%d %d %d %.2f\n",words,letters,sentences,l);
+    
 
     if (index < 1.5)
     {
