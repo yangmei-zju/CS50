@@ -23,7 +23,7 @@ int main()
     l = letters / words* 100;
     s = sentences / words * 100;
     index = (0.0588 * l) -( 0.296 * s) - 15.8;
-    printf("%d %d %d %f\n",words,letters,sentences,index);
+    printf("%d %d %d %f\n",words,letters,sentences,l);
 
     /*if (index < 1.5)
     {
