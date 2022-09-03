@@ -19,11 +19,11 @@ int main()
     int sentences = 0;
     words = count_words(text);
     sentences = count_sentences(text);
-    letters = count_letters(text);
-    l = (float)letters / (float)words* 100;
+    letters = count_letters(text);//数据类型 int/int
+    l = (float)letters / (float)words* 100;//如果没有类型转换则前面的除法结果为整数
     s = (float)sentences /(float) words * 100;
     index = 0.0588 * l - 0.296 * s - 15.8;
-    
+
 
     if (index < 1.5)
     {
