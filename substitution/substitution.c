@@ -4,7 +4,11 @@
 #include <string.h>
 int main(int argc, string argv[])
 {
-    if 
+    if(strlen(argv) != 26)
+    {
+        printf(")
+    }
+
 
 
 }
