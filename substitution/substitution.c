@@ -31,9 +31,11 @@ int main(int argc, string argv[])
     }
 
    string plaintext = get_string("plaintext:");
+   string ciphertext;
+
    for(int i = 0;plaintext[i] != '\0';i++)
    {
-        if()
+        if(is)
    }
 
 
