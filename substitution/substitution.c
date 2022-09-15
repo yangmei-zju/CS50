@@ -31,7 +31,7 @@ int main(int argc, string argv[])
     }
 
    string plaintext = get_string("plaintext:");
-   string ciphertext = {0};
+   string ciphertext = plaintext;
 
    for(int i = 0;plaintext[i] != '\0';i++)
    {
@@ -52,11 +52,6 @@ int main(int argc, string argv[])
         }
    }
    printf("ciphertext:%s\n",ciphertext);
-
-
-
-
-
 }
 
 int space(string argv)
