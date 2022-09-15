@@ -8,27 +8,23 @@ int repeat(string argv);
 
 int main(int argc, string argv[])
 {
-    if(strlen(argv) == 0)
+    if( argc != 0)
     {
         printf("Usage: ./substitution key\n");
         return 1;
     }
-   else if(!space(argv) )
-    {
-        printf("Usage: ./substitution key\n");
-        return 1;
-    }
-   else if(strlen(argv) != 26)
+
+   else if(strlen(argv[1]) != 26)
     {
         printf("Key must contain 26 characters.\n");
         return 1;
     }
-    else if(! alpha(argv))
+    else if(! alpha(argv[1]))
     {
         printf("Key must only contain alphabetic characters.\n");
         return 1;
     }
-    else if(! repeat(argv))
+    else if(! repeat(argv[1]))
     {
         printf("Key must not contain repeated characters.\n");
         return 1;
