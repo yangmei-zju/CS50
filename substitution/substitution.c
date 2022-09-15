@@ -31,12 +31,27 @@ int main(int argc, string argv[])
     }
 
    string plaintext = get_string("plaintext:");
-   string ciphertext;
+   string ciphertext = {0};
 
    for(int i = 0;plaintext[i] != '\0';i++)
    {
-        if(is)
+        int j = 0;
+        if(islower(plaintext[i]))
+        {
+            j = plaintext[i] - 'a';
+            ciphertext[i] = tolower(argv[1][j]);
+        }
+        else if(isupper(plaintext[i]))
+        {
+            j = plaintext[i] - 'A';
+            ciphertext[i] = toupper(argv[1][j]);
+        }
+        else
+        {
+            ciphertext[i] = plaintext[i];
+        }
    }
+   printf("%s\n",ciphertext);
 
 
 
