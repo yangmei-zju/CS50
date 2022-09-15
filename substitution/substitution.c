@@ -51,7 +51,7 @@ int main(int argc, string argv[])
             ciphertext[i] = plaintext[i];
         }
    }
-   printf("%s\n",ciphertext);
+   printf("ciphertext:%s\n",ciphertext);
 
 
 
