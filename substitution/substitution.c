@@ -14,7 +14,7 @@ int main(int argc, string argv[])
         return 1;
     }
 
-   /*else if(strlen(argv[1]) != 26)
+   else if(strlen(argv[1]) != 26)
     {
         printf("Key must contain 26 characters.\n");
         return 1;
@@ -51,7 +51,7 @@ int main(int argc, string argv[])
             ciphertext[i] = plaintext[i];
         }
    }
-   */printf("%s\n",argv[1]/*ciphertext*/);
+   printf("%s\n",ciphertext);
 
 
 
@@ -75,7 +75,7 @@ int space(string argv)
 int alpha(string argv)
 {
     int i = 0;
-    int n = 26;
+    int n = 25;
     for(i=0;argv[i] != '\0';i++)
     {
         if(isalpha(argv[i]))
