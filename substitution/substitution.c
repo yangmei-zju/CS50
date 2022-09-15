@@ -14,7 +14,7 @@ int main(int argc, string argv[])
         return 1;
     }
 
-   else if(strlen(argv[1]) != 26)
+   /*else if(strlen(argv[1]) != 26)
     {
         printf("Key must contain 26 characters.\n");
         return 1;
@@ -51,7 +51,7 @@ int main(int argc, string argv[])
             ciphertext[i] = plaintext[i];
         }
    }
-   printf("%s\n",ciphertext);*/
+   */printf("%s\n",argv[1]/*ciphertext*/);
 
 
 
