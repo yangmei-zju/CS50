@@ -19,12 +19,12 @@ int main(int argc, string argv[])
         printf("Key must contain 26 characters.\n");
         return 1;
     }
-    else if(! alpha(argv[1]))
+    else if(alpha(argv[1]) != 0)
     {
         printf("Key must only contain alphabetic characters.\n");
         return 1;
     }
-    else if(! repeat(argv[1]))
+    else if(repeat(argv[1]) != 0)
     {
         printf("Key must not contain repeated characters.\n");
         return 1;
@@ -75,7 +75,7 @@ int space(string argv)
 int alpha(string argv)
 {
     int i = 0;
-    int n = 25;
+    int n = 26;
     for(i=0;argv[i] != '\0';i++)
     {
         if(isalpha(argv[i]))
