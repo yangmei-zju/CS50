@@ -55,7 +55,7 @@ int alpha(string argv)
 {
     int i = 0;
     int n = 26;
-    for(i=0;argv[i] != '/0';i++)
+    for(i=0;argv[i] != '\0';i++)
     {
         if(isalpha(argv[i]))
         {
@@ -67,7 +67,7 @@ int alpha(string argv)
 int repeat(string argv)
 {
     int n = 0;
-    for(int i = 1;argv[i] != '/0';i++)
+    for(int i = 1;argv[i] != '\0';i++)
     {
         for(int j = 0; j < i;j++)
         {
