@@ -47,6 +47,10 @@ int main(int argc, string argv[])
             j = plaintext[i] - 'A';
             ciphertext[i] = toupper(argv[1][j]);
         }
+        else
+        {
+            
+        }
 
    }*/
    printf("ciphertext:%s\n",ciphertext);
