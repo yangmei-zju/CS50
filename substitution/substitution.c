@@ -31,7 +31,7 @@ int main(int argc, string argv[])
     }
 
    string plaintext = get_string("plaintext:");
-   string ciphertext ;
+   string ciphertext = NULL;
    strcpy(plaintext,ciphertext);
 
    /*for(int i = 0;plaintext[i] != '\0';i++)
