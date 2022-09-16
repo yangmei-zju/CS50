@@ -31,10 +31,10 @@ int main(int argc, string argv[])
     }
 
    string plaintext = get_string("plaintext:");
-   string ciphertext = NULL;
-   strcpy(plaintext,ciphertext);
+   /*string ciphertext = NULL;
+   strcpy(plaintext,ciphertext);*/
 
-   /*for(int i = 0;plaintext[i] != '\0';i++)
+   for(int i = 0;plaintext[i] != '\0';i++)
    {
         int j = 0;
         if(islower(plaintext[i]))
@@ -52,8 +52,8 @@ int main(int argc, string argv[])
            ciphertext[i] = argv[1][i];
         }
 
-   }*/
-   printf("ciphertext:%s\n",ciphertext);
+   }
+   printf("ciphertext:%s\n",plaintext);
 }
 
 int space(string argv)
