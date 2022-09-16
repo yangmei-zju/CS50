@@ -54,7 +54,7 @@ int main(int argc, string argv[])
         }
 
    }
-   printf("ciphertext:%s\n",plaintext);
+   printf("ciphertext:%s\n",plaintext);*/
 }
 
 int space(string argv)
@@ -99,4 +99,4 @@ int repeat(string argv)
 
     }
     return n;
-}*/
+}
