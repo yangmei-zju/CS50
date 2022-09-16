@@ -8,7 +8,7 @@ int repeat(string argv);
 
 int main(int argc, string argv[])
 {
-    if( argc != 2)
+   /* if( argc != 2)
     {
         printf("Usage: ./substitution key\n");
         return 1;
@@ -28,19 +28,19 @@ int main(int argc, string argv[])
     {
         printf("Key must not contain repeated characters.\n");
         return 1;
-    }
+    }*/
 
    string plaintext = get_string("plaintext:");
    /*string ciphertext = NULL;
    strcpy(plaintext,ciphertext);*/
 
-   for(int i = 0;plaintext[i] != '\0';i++)
+  /* for(int i = 0;plaintext[i] != '\0';i++)
    {
         int j = 0;
         if(islower(plaintext[i]))
-        {
-            j = plaintext[i] - 'a';
-            strcpy(plaintext[i] , tolower(argv[1][j]));
+        {*/
+            j = plaintext[1] - 'a';
+            /*strcpy(plaintext[i] , tolower(argv[1][j]));
         }
         else if(isupper(plaintext[i]))
         {
