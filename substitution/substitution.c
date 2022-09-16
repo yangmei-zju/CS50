@@ -40,12 +40,12 @@ int main(int argc, string argv[])
         if(islower(plaintext[i]))
         {
             j = plaintext[i] - 'a';
-            strcpy(ciphertext[i] , tolower(argv[1][j]));
+            strcpy(plaintext[i] , tolower(argv[1][j]));
         }
         else if(isupper(plaintext[i]))
         {
             j = plaintext[i] - 'A';
-            strcpy(ciphertext[i] , toupper(argv[1][j]));
+            strcpy(plaintext[i] , toupper(argv[1][j]));
         }
         else
         {
