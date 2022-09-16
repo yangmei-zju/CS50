@@ -52,7 +52,7 @@ int main(int argc, string argv[])
            ciphertext[i] = argv[1][i];
         }
 
-   }*/
+   }
    printf("ciphertext:%s\n",ciphertext);
 }
 
