@@ -6,9 +6,9 @@ int space(string argv);
 int alpha(string argv);
 int repeat(string argv);
 
-int main(int argc, string argv[])
+int main(int argc, string argv[])//理解int argc,string argv[]的意思
 {
-   if( argc != 2)
+   if( argc != 2)//输入要求
     {
         printf("Usage: ./substitution key\n");
         return 1;
@@ -31,13 +31,12 @@ int main(int argc, string argv[])
     }
 
    string plaintext = get_string("plaintext:");
-   /*string ciphertext = NULL;
-   strcpy(plaintext,ciphertext);*/
+
 
    for(int i = 0;plaintext[i] != '\0';i++)
    {
         int j = 0;
-        
+
         if(islower(plaintext[i]))
         {
             j = plaintext[i] - 'a';
