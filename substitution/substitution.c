@@ -40,7 +40,7 @@ int main(int argc, string argv[])
         if(islower(plaintext[i]))
         {
             j = plaintext[1] - 'a';
-            printf("%d",j);
+            
             plaintext[i] = tolower(argv[1][j]);
         }
         else if(isupper(plaintext[i]))
