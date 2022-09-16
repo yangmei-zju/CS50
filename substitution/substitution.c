@@ -8,7 +8,7 @@ int repeat(string argv);
 
 int main(int argc, string argv[])
 {
-   /* if( argc != 2)
+   if( argc != 2)
     {
         printf("Usage: ./substitution key\n");
         return 1;
@@ -28,33 +28,33 @@ int main(int argc, string argv[])
     {
         printf("Key must not contain repeated characters.\n");
         return 1;
-    }*/
+    }
 
    string plaintext = get_string("plaintext:");
    /*string ciphertext = NULL;
    strcpy(plaintext,ciphertext);*/
 
-  /* for(int i = 0;plaintext[i] != '\0';i++)
-   {*/
+   for(int i = 0;plaintext[i] != '\0';i++)
+   {
         int j = 0;
-       /* if(islower(plaintext[i]))
-        {*/
+        if(islower(plaintext[i]))
+        {
             j = plaintext[1] - 'a';
             printf("%d",j);
-            /*strcpy(plaintext[i] , tolower(argv[1][j]));
+            plaintext[i] = tolower(argv[1][j]);
         }
         else if(isupper(plaintext[i]))
         {
             j = plaintext[i] - 'A';
-            strcpy(plaintext[i] , toupper(argv[1][j]));
+            plaintext[i] = toupper(argv[1][j]);
         }
-        else
+        /*else
         {
            ciphertext[i] = argv[1][i];
-        }
+        }*/
 
    }
-   printf("ciphertext:%s\n",plaintext);*/
+   printf("ciphertext:%s\n",plaintext);
 }
 
 int space(string argv)
@@ -64,7 +64,7 @@ int space(string argv)
     for(i = 0;i < strlen(argv);i ++)
     {
         if(isspace(argv[i]))
-        {
+
             n++;
         }
     }
