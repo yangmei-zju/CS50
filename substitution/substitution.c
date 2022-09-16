@@ -64,12 +64,14 @@ int space(string argv)
     for(i = 0;i < strlen(argv);i ++)
     {
         if(isspace(argv[i]))
+        {
 
             n++;
         }
     }
     return n;
 }
+
 int alpha(string argv)
 {
     int i = 0;
