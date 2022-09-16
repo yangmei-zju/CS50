@@ -37,10 +37,10 @@ int main(int argc, string argv[])
    for(int i = 0;plaintext[i] != '\0';i++)
    {
         int j = 0;
-        int m = 0;
+        
         if(islower(plaintext[i]))
         {
-            j = plaintext[1] - 'a';
+            j = plaintext[i] - 'a';
 
             plaintext[i] = tolower(argv[1][j]);
         }
