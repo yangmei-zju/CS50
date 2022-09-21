@@ -1,10 +1,12 @@
 #include <stdio.h>
+#include <string.h>
+#include
 #define MAX 10
 void zip(char *p);
 int main()
 {
     char line[MAX];
-    gets(line);
+    line = get_string(line:);
     zip(line);
     puts(line);
     return 0;
