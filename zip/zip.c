@@ -6,7 +6,7 @@ void zip(char *p);
 int main()
 {
     char line[MAX];
-    line = get_string(line:);
+    
     zip(line);
     puts(line);
     return 0;
