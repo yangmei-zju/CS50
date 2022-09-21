@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include <string.h>
-#include
+#include <cs50.h>
 #define MAX 10
 void zip(char *p);
 int main()
