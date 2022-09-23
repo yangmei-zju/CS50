@@ -33,7 +33,7 @@ int main(int argc, string argv[])//理解int argc,string argv[]的意思
    string plaintext = get_string("plaintext:");
 
 
-   for(int i = 0;plaintext[i] != '\0';i++)
+   for(int i = 0; plaintext[i] != '\0'; i++)
    {
         int j = 0;
 
@@ -54,14 +54,14 @@ int main(int argc, string argv[])//理解int argc,string argv[]的意思
         }*/
 
    }
-   printf("ciphertext:%s\n",plaintext);
+   printf("ciphertext:%s\n", plaintext);
 }
 
 int space(string argv)
 {
     int i = 0;
     int n = 0;
-    for(i = 0;i < strlen(argv);i ++)
+    for(i = 0; i < strlen(argv); i ++)
     {
         if(isspace(argv[i]))
         {
@@ -76,7 +76,7 @@ int alpha(string argv)
 {
     int i = 0;
     int n = 26;
-    for(i=0;argv[i] != '\0';i++)
+    for(i = 0; argv[i] != '\0'; i++)
     {
         if(isalpha(argv[i]))
         {
@@ -88,9 +88,9 @@ int alpha(string argv)
 int repeat(string argv)
 {
     int n = 0;
-    for(int i = 1;argv[i] != '\0';i++)
+    for(int i = 1; argv[i] != '\0'; i++)
     {
-        for(int j = 0; j < i;j++)
+        for(int j = 0; j < i; j++)
         {
             if(argv[j] == argv[i])
             {
