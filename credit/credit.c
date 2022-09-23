@@ -13,7 +13,7 @@ int main(void)
     long sum1 = 0;
     long sum2 = 0;
     long a = 0;
-    long  sum = 0;
+    long sum = 0;
     int i;
     long number;
     number = Number;
@@ -25,7 +25,7 @@ int main(void)
         if (i % 2 == 0)
         {
             int c = 0;
-            if(a < 5)
+            if (a < 5)
             {
                 c = a * 2;
             }
@@ -39,7 +39,7 @@ int main(void)
             }
 
 
-            sum1 = sum1 + c ;
+            sum1 = sum1 + c;
         }
         else
             sum2 = sum2 + a;
@@ -52,7 +52,7 @@ int main(void)
 
 
     //如果sum整除10则进入下一步判断
-   if(sum%10==0)
+   if (sum%10==0)
     {
 
         //该数的前两位数b
@@ -65,15 +65,15 @@ int main(void)
         while(b>100);
         printf("%ld\n",b);
         //根据b判断credit类型
-        if((b == 34 || b == 37)&& length == 15)
+        if ((b == 34 || b == 37) && length == 15)
         {
             printf("AMEX\n");
         }
-        else if(b >= 51 && b<=55&&length == 16)
+        else if (b >= 51 && b<=55 && length == 16)
         {
             printf("MASTERCARD\n");
         }
-        else if(b >= 40 && b <= 49&&(length == 13 ||length == 16))
+        else if (b >= 40 && b <= 49 && (length == 13 ||length == 16))
         {
         printf("VISA\n");
         }
