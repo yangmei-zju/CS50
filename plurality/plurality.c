@@ -82,9 +82,9 @@ bool vote(string name)
 void print_winner(void)
 {
     // TODO
-    for(int i =0;i<=candidate_count;i++)
+    for(int i =0;i<candidate_count;i++)
     {
-        if()
+        if(candidate[i].votes)
     }
     return;
 }
