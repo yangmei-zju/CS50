@@ -13,7 +13,7 @@ int main(void)
     }
     while (Height < 1 || Height > 8);
 
-    for (int i = 1; i<= Height; i++)
+    for (int i = 1; i <= Height; i++)
     {
         space(Height - i);
         la(i);
