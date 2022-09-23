@@ -8,42 +8,42 @@ int repeat(string argv);
 
 int main(int argc, string argv[])//理解int argc,string argv[]的意思
 {
-   if(argc != 2)//输入要求
+    if (argc != 2) //输入要求
     {
         printf("Usage: ./substitution key\n");
         return 1;
     }
 
-   else if(strlen(argv[1]) != 26)
+    else if (strlen(argv[1]) != 26)
     {
         printf("Key must contain 26 characters.\n");
         return 1;
     }
-    else if(alpha(argv[1]) != 0)
+    else if (alpha(argv[1]) != 0)
     {
         printf("Key must only contain alphabetic characters.\n");
         return 1;
     }
-    else if(repeat(argv[1]) != 0)
+    else if (repeat(argv[1]) != 0)
     {
         printf("Key must not contain repeated characters.\n");
         return 1;
     }
 
-   string plaintext = get_string("plaintext:");
+    string plaintext = get_string("plaintext:");
 
 
-   for(int i = 0; plaintext[i] != '\0'; i++)
+    for (int i = 0; plaintext[i] != '\0'; i++)
    {
         int j = 0;
 
-        if(islower(plaintext[i]))
+        if (islower(plaintext[i]))
         {
             j = plaintext[i] - 'a';
 
             plaintext[i] = tolower(argv[1][j]);
         }
-        else if(isupper(plaintext[i]))
+        else if (isupper(plaintext[i]))
         {
             j = plaintext[i] - 'A';
             plaintext[i] = toupper(argv[1][j]);
@@ -53,17 +53,17 @@ int main(int argc, string argv[])//理解int argc,string argv[]的意思
            ciphertext[i] = argv[1][i];
         }*/
 
-   }
-   printf("ciphertext:%s\n", plaintext);
+    }
+    printf("ciphertext:%s\n", plaintext);
 }
 
 int space(string argv)
 {
     int i = 0;
     int n = 0;
-    for(i = 0; i < strlen(argv); i ++)
+    for (i = 0; i < strlen(argv); i ++)
     {
-        if(isspace(argv[i]))
+        if (isspace(argv[i]))
         {
 
             n++;
@@ -76,9 +76,9 @@ int alpha(string argv)
 {
     int i = 0;
     int n = 26;
-    for(i = 0; argv[i] != '\0'; i++)
+    for (i = 0; argv[i] != '\0'; i++)
     {
-        if(isalpha(argv[i]))
+        if (isalpha(argv[i]))
         {
             n--;
         }
@@ -88,11 +88,11 @@ int alpha(string argv)
 int repeat(string argv)
 {
     int n = 0;
-    for(int i = 1; argv[i] != '\0'; i++)
+    for (int i = 1; argv[i] != '\0'; i++)
     {
-        for(int j = 0; j < i; j++)
+        for (int j = 0; j < i; j++)
         {
-            if(argv[j] == argv[i])
+            if (argv[j] == argv[i])
             {
                 n++;
             }
