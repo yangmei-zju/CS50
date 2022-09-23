@@ -20,7 +20,7 @@ int main(void)
     for (i = 1; number > 0; i++)
     {
 
-        a = number %10;
+        a = number % 10;
         number = number / 10;
         if (i % 2 == 0)
         {
