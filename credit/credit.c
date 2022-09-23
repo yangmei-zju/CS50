@@ -87,7 +87,6 @@ int main(void)
     else
     {
         printf("INVALID\n");
-
     }
 }
 /*错误集合：1.没注意long与int
