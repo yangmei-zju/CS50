@@ -8,7 +8,7 @@ int repeat(string argv);
 
 int main(int argc, string argv[])//理解int argc,string argv[]的意思
 {
-   if( argc != 2)//输入要求
+   if(argc != 2)//输入要求
     {
         printf("Usage: ./substitution key\n");
         return 1;
