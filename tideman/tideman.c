@@ -117,6 +117,7 @@ void record_preferences(int ranks[])
 {
     // TODO
     
+
     return;
 }
 
