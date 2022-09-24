@@ -171,7 +171,13 @@ void sort_pairs(void)
         {
             if ((preference[pairs[j].winner][pairs[j].loser]/preference[pairs[j].loser][pairs[j].winner]) < (preference[pairs[j+1].winner][pairs[j+1].loser]/preference[pairs[j+1].loser][pairs[j+1].winner]))
             {
-                swap(pairs[j],pairs[j+1]);
+                int t ,p;
+                t = pairs[j].winner;
+                p = pairs[j].loser;
+                pairs[j].winner = pairs[j+1].winner;
+                pairs[j].loser = pairs[j+1].loser;
+                pairs[j+1].winner = t;
+                pairs[j+1].loser = p;
             }
         }
     }
@@ -182,6 +188,7 @@ void sort_pairs(void)
 void lock_pairs(void)
 {
     // TODO
+    
     return;
 }
 
