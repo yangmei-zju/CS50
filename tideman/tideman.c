@@ -22,7 +22,7 @@ pair;
 string candidates[MAX];
 pair pairs[MAX * (MAX - 1) / 2];
 
-int pair_count;
+int pair_count;//全局变量
 int candidate_count;
 
 // Function prototypes
@@ -104,7 +104,7 @@ bool vote(int rank, string name, int ranks[])
     {
         if (strcmp(name,candidate[i]) ==0)
         {
-            
+
         }
     }
     return false;
