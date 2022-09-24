@@ -139,7 +139,7 @@ void add_pairs(void)
 {
     // TODO
     int n = 0;
-    for (int i = 0; i < candidate_count - 1; i++)
+    for (int i = 0; i < candidate_count-1; i++)
     {
         for (int j = i+1; j < candidate_count; j++)
         {
@@ -167,9 +167,12 @@ void sort_pairs(void)
     // TODO
     for (int i = 0; i < pair_count; i++)
     {
-        for (int j = 0; j <pair_count - i; j++)
+        for (int j = 0; j <pair_count-i-1; j++)
         {
-            if ((preference[pairs[j].winner][pairs[j].loser]/)
+            if ((preference[pairs[j].winner][pairs[j].loser]/preference[pairs[j].loser][pairs[j].winner]) < (preference[pairs[j+1].winner][pairs[j+1].loser]/preference[pairs[j+1].loser][pairs[j+1].winner]))
+            {
+                swap(pairs[j],pairs[j+1]);
+            }
         }
     }
     return;
