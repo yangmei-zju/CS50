@@ -116,20 +116,20 @@ bool vote(int rank, string name, int ranks[])
 void record_preferences(int ranks[])
 {
     // TODO
-        for (int i = 0; i < candidate_count; i++)
-        {
-            for (int j = 0; j < candidate_count; j++)
+    for (int i = 0; i < candidate_count; i++)
+    {
+         for (int j = 0; j < candidate_count; j++)
+         {
+            if( i == j)
             {
-                if( i == j)
-                {
-                    preference[i][j] = 0;
-                }
-                else if (rank [i] < rank[j])
-                {
-                    preference[i][j] ++;
-                }
+                preference[i][j] = 0;
             }
-        }
+            else if (rank [i] < rank[j])
+            {
+                preference[i][j] ++;
+            }
+         }
+    }
 
     return;
 }
@@ -138,15 +138,21 @@ void record_preferences(int ranks[])
 void add_pairs(void)
 {
     // TODO
-    for (int n =0; n < pair_count; n++)
+    for (int n = 0; n < pair_count; n++)
     {
-        for (int i = 0; i < candidate_count; i++)
+        for (int i = 0; i < candidate_count - 1; i++)
         {
-            for (int j = 0; j < candidate_count; j++)
+            for (int j = i+1; j < candidate_count; j++)
             {
                 if (preference[i][j] > preference[j][i])
                 {
-                    pair
+                    pairs[n].winners = i;
+                    pairs[n].losers = j;
+                }
+                else if (preference[i][j] < preference[j][i])
+                {
+                    pairs[n].winners = j;
+                    pairs[n].losers = i;
                 }
             }
         }
