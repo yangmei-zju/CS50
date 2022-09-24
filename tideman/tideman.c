@@ -101,11 +101,11 @@ bool vote(int rank, string name, int ranks[])
 {
     // TODO
     ranks[] = {0,0,0};
-    for (int i = 0; i < candidate_counts; i++)
+    for (int i = 0; i < candidate_count; i++)
     {
         if (strcmp(name,candidate[i]) ==0)
         {
-            ranks[rank] ++;
+            ranks[rank] = i;
             return true;
         }
     }
@@ -116,7 +116,8 @@ bool vote(int rank, string name, int ranks[])
 void record_preferences(int ranks[])
 {
     // TODO
-    
+    for(int i = 0; i <= candidate_count; )
+
 
     return;
 }
