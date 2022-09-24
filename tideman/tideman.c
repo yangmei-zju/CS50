@@ -210,7 +210,10 @@ void print_winner(void)
        while(locked[j][i] == false)
        {
         j++;
-        if( j == )
+        if( j == candidate_count)
+        {
+            printf("%s",candidate[i]);
+        }
        }
     }
     return;
