@@ -103,7 +103,7 @@ bool vote(int rank, string name, int ranks[])
     // TODO
     for (int i = 0; i < candidate_count; i++)
     {
-        if (strcmp(name,candidate[i]) ==0)
+        if (strcmp(name,candidates[i]) ==0)
         {
             ranks[i] = rank;
             return true;
@@ -122,11 +122,11 @@ void record_preferences(int ranks[])
          {
             if( i == j)
             {
-                preference[i][j] = 0;
+                preferences[i][j] = 0;
             }
             else if (rank [i] < rank[j])
             {
-                preference[i][j] ++;
+                preferences[i][j] ++;
             }
          }
     }
@@ -143,13 +143,13 @@ void add_pairs(void)
     {
         for (int j = i+1; j < candidate_count; j++)
         {
-            if (preference[i][j] > preference[j][i])
+            if (preferences[i][j] > preferences[j][i])
             {
                 pairs[n].winners = i;
                 pairs[n].losers = j;
                 n++;
             }
-            else if (preference[i][j] < preference[j][i])
+            else if (preferences[i][j] < preferences[j][i])
             {
                 pairs[n].winners = j;
                 pairs[n].losers = i;
@@ -169,7 +169,7 @@ void sort_pairs(void)
     {
         for (int j = 0; j <pair_count-i-1; j++)
         {
-            if ((preference[pairs[j].winner][pairs[j].loser]/preference[pairs[j].loser][pairs[j].winner]) < (preference[pairs[j+1].winner][pairs[j+1].loser]/preference[pairs[j+1].loser][pairs[j+1].winner]))
+            if ((preferences[pairs[j].winner][pairs[j].loser]/preferences[pairs[j].loser][pairs[j].winner]) < (preferences[pairs[j+1].winner][pairs[j+1].loser]/preferences[pairs[j+1].loser][pairs[j+1].winner]))
             {
                 int t ,p;
                 t = pairs[j].winner;
@@ -220,7 +220,7 @@ void print_winner(void)
         j++;
         if( j == candidate_count)
         {
-            printf("%s",candidate[i]);
+            printf("%s",candidates[i]);
         }
        }
     }
