@@ -21,8 +21,8 @@ pair;
 // Array of candidates
 string candidates[MAX];
 pair pairs[MAX * (MAX - 1) / 2];
-
-int pair_count;//全局变量
+//global variables
+int pair_count;
 int candidate_count;
 
 // Function prototypes
