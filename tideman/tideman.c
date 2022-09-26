@@ -177,13 +177,20 @@ void sort_pairs(void)
     return;
 }
 
+bool circle(int winner,loser)
+{
+    for (int i = 0; i <= candidate_count; i++)
+    {
+        
+    }
+}
 // Lock pairs into the candidate graph in order, without creating cycles
 void lock_pairs(void)
 {
     // TODO
     for (int n = 0; n < pair_count; n++)
     {
-        
+
     }
     return;
 }
