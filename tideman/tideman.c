@@ -211,7 +211,7 @@ void lock_pairs(void)
 }
 
 // Print the winner of the election
-void print_winner(void)
+/*void print_winner(void)
 {
     // TODO
     for (int i = 0; i < candidate_count; i++)
@@ -224,6 +224,29 @@ void print_winner(void)
             printf("%s",candidates[i]);
         }
        }
+    }
+    return;
+}*/
+void print_winner(void)
+{
+    // TODO
+    for (int i = 0; i < candidate_count; i++)
+    {
+        bool isLoser = false;
+        for (int j = 0; j < candidate_count; j++)
+        {
+            // j -> i
+            if (locked[j][i])
+            {
+                isLoser = true;
+                break;
+            }
+        }
+        if (!isLoser)
+        {
+            printf("%s\n", candidates[i]);
+            break;
+        }
     }
     return;
 }
