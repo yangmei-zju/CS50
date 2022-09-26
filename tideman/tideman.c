@@ -184,7 +184,8 @@ bool circle(int winner,loser)
         if(!bool circle(loser,i))
         {
             locked[i][winner] = true;
-            
+            if (bool circle(loser,winner))
+            return true;
         }
 
     }
