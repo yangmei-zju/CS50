@@ -183,14 +183,15 @@ bool is_line(int loser,int winner)
     {
         return true;
     }
-    for (int i = 0; i <= candidate_count; i++)
+    for (int i = 0; i < candidate_count; i++)
     {
         if (locked[loser][i])
         {
             if (is_line(i,winner))
+            {
             return true;
+            }
         }
-
     }
     return false;
 }
