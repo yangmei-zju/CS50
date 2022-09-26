@@ -181,12 +181,11 @@ bool circle(int winner,loser)
 {
     for (int i = 0; i <= candidate_count; i++)
     {
-        if(!bool circle(loser,i))
+        if (loked[loser][i])
         {
-            locked[i][winner] = true;
-            if (bool circle(loser,winner))
-            return true;
+            if (bool circle(i,winner))
         }
+
 
     }
 }
