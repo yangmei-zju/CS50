@@ -179,7 +179,7 @@ void sort_pairs(void)
 
 bool is_line(int loser,int winner)
 {
-    if (loser == winner)
+    if (winner == loser)
     {
         return true;
     }
