@@ -184,10 +184,11 @@ bool circle(int winner,loser)
         if (loked[loser][i])
         {
             if (bool circle(i,winner))
+            return true;
         }
 
-
     }
+    return false;
 }
 // Lock pairs into the candidate graph in order, without creating cycles
 void lock_pairs(void)
@@ -195,6 +196,7 @@ void lock_pairs(void)
     // TODO
     for (int n = 0; n < pair_count; n++)
     {
+        if(!bool circle())
 
     }
     return;
