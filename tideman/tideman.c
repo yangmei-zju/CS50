@@ -118,7 +118,7 @@ void record_preferences(int ranks[])
     // TODO
     for (int i = 0; i < candidate_count; i++)
     {
-         for (int j = i+1; j < candidate_count; j++)
+        for (int j = i + 1; j < candidate_count; j++)
         {
             preferences[ranks[i]][ranks[j]] ++;
         }
@@ -134,7 +134,7 @@ void add_pairs(void)
     int n = 0;
     for (int i = 0; i < candidate_count; i++)
     {
-        for (int j = i+1; j < candidate_count; j++)
+        for (int j = i + 1; j < candidate_count; j++)
         {
             if (preferences[i][j] > preferences[j][i])
             {
@@ -160,9 +160,9 @@ void sort_pairs(void)
     // TODO
     for (int i = 0; i < pair_count; i++)
     {
-        for (int j = 0; j <pair_count-i-1; j++)
+        for (int j = 0; j < pair_count- i - 1; j++)
         {
-            if (preferences[pairs[j].winner][pairs[j].loser]/*/preferences[pairs[j].loser][pairs[j].winner])*/ < preferences[pairs[j+1].winner][pairs[j+1].loser]/*/preferences[pairs[j+1].loser][pairs[j+1].winner])*/)
+            if (preferences[pairs[j].winner][pairs[j].loser] / preferences[pairs[j].loser][pairs[j].winner]) < preferences[pairs[j+1].winner][pairs[j+1].loser] / preferences[pairs[j+1].loser][pairs[j+1].winner]))
             {
                 int t ,p;
                 t = pairs[j].winner;
@@ -177,7 +177,7 @@ void sort_pairs(void)
     return;
 }
 
-bool is_line(int loser,int winner)
+bool is_line(int loser, int winner)
 {
     if (winner == loser)
     {
@@ -187,9 +187,9 @@ bool is_line(int loser,int winner)
     {
         if (locked[loser][i])
         {
-            if (is_line(i,winner))
+            if (is_line(i, winner))
             {
-            return true;
+                return true;
             }
         }
     }
@@ -201,7 +201,7 @@ void lock_pairs(void)
     // TODO
     for (int n = 0; n < pair_count; n++)
     {
-        if(is_line(pairs[n].loser,pairs[n].winner) == false)
+        if (is_line(pairs[n].loser, pairs[n].winner) == false)
         {
             locked[pairs[n].winner][pairs[n].loser] = true;
         }
