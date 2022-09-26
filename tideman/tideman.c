@@ -179,6 +179,10 @@ void sort_pairs(void)
 
 bool is_line(int loser,int winner)
 {
+    if (winner == loser)
+    {
+        return true;
+    }
     for (int i = 0; i <= candidate_count; i++)
     {
         if (locked[loser][i])
