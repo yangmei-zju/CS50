@@ -177,13 +177,13 @@ void sort_pairs(void)
     return;
 }
 
-bool circles(int winner,int loser)
+bool is_line(int loser,int winner)
 {
     for (int i = 0; i <= candidate_count; i++)
     {
         if (locked[loser][i])
         {
-            if (circles(i,winner))
+            if (is_line(i,winner))
             return true;
         }
 
@@ -196,7 +196,7 @@ void lock_pairs(void)
     // TODO
     for (int n = 0; n < pair_count; n++)
     {
-        if(! circles(pairs[n].winner,pairs[n].loser))
+        if(! is_line(pairs[n].winner,pairs[n].loser))
         {
             locked[pairs[n].winner][pairs[n].loser] = true;
         }
