@@ -181,10 +181,12 @@ bool circle(int winner,loser)
 {
     for (int i = 0; i <= candidate_count; i++)
     {
-        if(!bool(loser,i))
+        if(!bool circle(loser,i))
         {
+            locked[i][winner] = true;
             
         }
+
     }
 }
 // Lock pairs into the candidate graph in order, without creating cycles
