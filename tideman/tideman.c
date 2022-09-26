@@ -201,7 +201,7 @@ void lock_pairs(void)
     // TODO
     for (int n = 0; n < pair_count; n++)
     {
-        if(is_line(pairs[n].winner,pairs[n].loser) == false)
+        if(is_line(pairs[n].loser,pairs[n].winner) == false)
         {
             locked[pairs[n].winner][pairs[n].loser] = true;
         }
