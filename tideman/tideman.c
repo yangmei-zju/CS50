@@ -215,7 +215,8 @@ void lock_pairs(void)
 {
     // TODO
     for (int i = 0; i < candidate_count; i++)
-    {  int j = 0;
+    {
+        int j = 0;
        while(locked[j][i] == false)
        {
         j++;
