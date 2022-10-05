@@ -5,10 +5,10 @@ void grayscale(int height, int width, RGBTRIPLE image[height][width])
 {
     for (int i = 0; i < height; i ++)
     {
-        for (int i = 0; j < width; j ++)
+        for (int j = 0; j < width; j ++)
         {
              float average;
-             average = (image[i][j].rgbtBLUE + image[i][j].rgbtGREEN + image[i][j].rgbtRED) / 3.0;
+             average = (image[i][j].rgbtBlue + image[i][j].rgbtGreen + image[i][j].rgbtRed) / 3.0;
              if ( average < ((int)average + 0.5))
              {
                 average = (int)average;
@@ -17,9 +17,9 @@ void grayscale(int height, int width, RGBTRIPLE image[height][width])
              {
                 average = (int)average + 1;
              }
-             image[i][j].rgbtBLUE = average;
-             image[i][j].rgbtGREEN = average;
-             image[i][j].rgbtRED = average;
+             image[i][j].rgbtBlue = average;
+             image[i][j].rgbtGreen = average;
+             image[i][j].rgbtRed = average;
         }
     }
     return;
@@ -51,14 +51,15 @@ void sepia(int height, int width, RGBTRIPLE image[height][width])
     {
         for (int j = 0; j < width; j++)
         {
-            int red = image[i][j].rgbtRED;
-            int blue = image[i][j].rgbtBLUE;
-            int green = image[i][j].rgbtGREEN;
+            int red = image[i][j].rgbtRed;
+            int blue = image[i][j].rgbtBlue;
+            int green = image[i][j].rgbtGreen;
             float sred = 0.393 * red + 0.769 * green + 0.189 * blue;
             float sblue = 0.272 * red + 0.534 * green + 0.131 * blue;
-            image[i][j].rgbtRED = int_convert(sred);
-            image[i][j].rgbtBLUE = int_convert(sblue);
-            image[i][j].rgbtGREEN = int_cinvert(sgreen);
+            float sgreen = 0.349 * red + 0.686 * green + 0.168 * blue;
+            image[i][j].rgbtRed = int_convert(sred);
+            image[i][j].rgbtBlue = int_convert(sblue);
+            image[i][j].rgbtGreen = int_cinvert(sgreen);
         }
     }
     return;
