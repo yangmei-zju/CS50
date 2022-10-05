@@ -89,7 +89,7 @@ void blur(int height, int width, RGBTRIPLE image[height][width])
             temp[i][j] = image[i][j];
         }
     }
-    image[0][0].rgbtRed =int_convert((temp[0][0].rgbtRed + temp[0][1].rgbtRed + temp[1][0].rgbtRed + temp[1][1].rgbtRed) / 4.0);
+    /*image[0][0].rgbtRed =int_convert((temp[0][0].rgbtRed + temp[0][1].rgbtRed + temp[1][0].rgbtRed + temp[1][1].rgbtRed) / 4.0);
     image[0][0].rgbtBlue =int_convert((temp[0][0].rgbtBlue + temp[0][1].rgbtBlue + temp[1][0].rgbtBlue + temp[1][1].rgbtBlue) / 4.0);
     image[0][0].rgbtRed =int_convert((temp[0][0].rgbtGreen + temp[0][1].rgbtGreen + temp[1][0].rgbtGreen + temp[1][1].rgbtGreen) / 4.0);
     image[0][width - 1].rgbtRed =int_convert((temp[0][width - 1].rgbtRed + temp[0][width - 2].rgbtRed + temp[1][width - 1].rgbtRed + temp[1][width - 2].rgbtRed) / 4.0);
@@ -100,11 +100,9 @@ void blur(int height, int width, RGBTRIPLE image[height][width])
     image[height - 1][0].rgbtRed =int_convert((temp[height - 1][0].rgbtGreen + temp[height - 1][1].rgbtGreen + temp[height - 2][0].rgbtGreen + temp[height - 2][1].rgbtGreen) / 4.0);
     image[height - 1][width - 1].rgbtRed =int_convert((temp[height - 1][width - 1].rgbtRed + temp[height -1 ][width - 2].rgbtRed + temp[height - 2][width - 1].rgbtRed + temp[height - 2][width - 2].rgbtRed) / 4.0);
     image[height - 1][width - 1].rgbtBlue =int_convert((temp[height - 1][width - 1].rgbtBlue + temp[height -1][width - 2].rgbtBlue + temp[height - 2][width - 1].rgbtBlue + temp[height - 2][width - 2].rgbtBlue) / 4.0);
-    image[height - 1][width - ].rgbtRed =int_convert((temp[height - 1][width - 1].rgbtGreen + temp[height - 1][width - 2].rgbtGreen + temp[height - 2][width - 1].rgbtGreen + temp[height - 2][width - 2].rgbtGreen) / 4.0);
-    for( j = 1; j < width - 1; j++)
-    {
-        image[0][j].rgbtRed = int_convert((temp[0][j - 1].rgbtRed + temp[0][j].rgbtRed + temp[0][j+1]rgbtRed + temp[1][j - 1].rgbtRed + ))
-    }
+    image[height - 1][width - ].rgbtRed =int_convert((temp[height - 1][width - 1].rgbtGreen + temp[height - 1][width - 2].rgbtGreen + temp[height - 2][width - 1].rgbtGreen + temp[height - 2][width - 2].rgbtGreen) / 4.0);*/
+
+    for (int i = 0; i < )
     return;
 
 }
