@@ -120,7 +120,12 @@ void blur(int height, int width, RGBTRIPLE image[height][width])
                         continue;
                     }
                     count ++;
-                    sr += temp[i + r][j + c].rgbt
+                    sr += temp[i + r][j + c].rgbtRed;
+                    sb += temp[i + r][j + c].rgbtBlue;
+                    sg += temp[i + r][j + c].rgbtGreen;
+                    image[i][j].rgbtRed = int_convert(sr / count);
+                    image[i][j].rgbtBlue = int_convert(sb / count);
+                    image[i][j].rgbtGreen = int_c
                 }
             }
         }
