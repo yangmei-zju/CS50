@@ -103,7 +103,7 @@ void blur(int height, int width, RGBTRIPLE image[height][width])
     image[height - 1][width - ].rgbtRed =int_convert((temp[height - 1][width - 1].rgbtGreen + temp[height - 1][width - 2].rgbtGreen + temp[height - 2][width - 1].rgbtGreen + temp[height - 2][width - 2].rgbtGreen) / 4.0);
     for( j = 1; j < width - 1; j++)
     {
-        image[0][j] = int_convert(())
+        image[0][j].rgbtRed = int_convert((temp[0][j - 1].rgbtRed + temp[0][j].rgbtRed + temp[0][j+1]rgbtRed + temp[1][]))
     }
     return;
 
