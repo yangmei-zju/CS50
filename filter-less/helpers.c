@@ -59,7 +59,7 @@ void sepia(int height, int width, RGBTRIPLE image[height][width])
             float sgreen = 0.349 * red + 0.686 * green + 0.168 * blue;
             image[i][j].rgbtRed = int_convert(sred);
             image[i][j].rgbtBlue = int_convert(sblue);
-            image[i][j].rgbtGreen = int_cinvert(sgreen);
+            image[i][j].rgbtGreen = int_convert(sgreen);
         }
     }
     return;
