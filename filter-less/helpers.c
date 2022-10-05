@@ -103,11 +103,11 @@ void blur(int height, int width, RGBTRIPLE image[height][width])
             {
                 for (int c = -1; c <= 1; c++)
                 {
-                    if(i + r < 0 || i + r > height - 1)
+                    if (i + r < 0 || i + r > height - 1)
                     {
                         continue;
                     }
-                    if(j + c < 0 || j + c > width - 1)
+                    if (j + c < 0 || j + c > width - 1)
                     {
                         continue;
                     }
