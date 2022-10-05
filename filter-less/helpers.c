@@ -89,6 +89,13 @@ void blur(int height, int width, RGBTRIPLE image[height][width])
             temp[i][j] = image[i][j];
         }
     }
-    image[0][0].
+    image[0][0].rgbtRed =int_convert((temp[0][0].rgbtRed + temp[0][1].rgbtRed + temp[1][0].rgbtRed + temp[1][1].rgbtRed) / 4.0);
+    image[0][0].rgbtBlue =int_convert((temp[0][0].rgbtBlue + temp[0][1].rgbtBlue + temp[1][0].rgbtBlue + temp[1][1].rgbtBlue) / 4.0);
+    image[0][0].rgbtRed =int_convert((temp[0][0].rgbtGreen + temp[0][1].rgbtGreen + temp[1][0].rgbtGreen + temp[1][1].rgbtGreen) / 4.0);
+    image[0][0].rgbtRed =int_convert((temp[0][0].rgbtRed + temp[0][1].rgbRted + temp[1][0].rgbtRed + temp[1][1].rgbtRed) / 4.0);
+    image[0][0].rgbtRed =int_convert((temp[0][0].rgbtRed + temp[0][1].rgbRted + temp[1][0].rgbtRed + temp[1][1].rgbtRed) / 4.0);
+
     return;
+
 }
+
