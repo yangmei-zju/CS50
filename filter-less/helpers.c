@@ -26,7 +26,13 @@ void grayscale(int height, int width, RGBTRIPLE image[height][width])
 }
 
 // Convert image to sepia
-int 
+int int_convert(float p)
+{
+    if (p < ((int)p + 0.5))
+    {
+        p = (int)
+    }
+}
 void sepia(int height, int width, RGBTRIPLE image[height][width])
 {
     for (int i = 0; i < height; i++)
