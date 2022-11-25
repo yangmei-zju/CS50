@@ -15,7 +15,11 @@ node;
 
 // TODO: Choose number of buckets in hash table
 const unsigned int N = 26;
-fscanf(")
+while(fscanf("argv[2],%s",node->word)  != EOF )
+{
+    node = node->next;
+    continue;
+}
 
 // Hash table
 node *table[N];
