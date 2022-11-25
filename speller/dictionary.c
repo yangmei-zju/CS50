@@ -15,7 +15,7 @@ node;
 
 // TODO: Choose number of buckets in hash table
 const unsigned int N = 26;
-
+fscanf(")
 
 // Hash table
 node *table[N];
