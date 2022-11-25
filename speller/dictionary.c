@@ -15,8 +15,12 @@ node;
 
 // TODO: Choose number of buckets in hash table
 const unsigned int N = 26;
-while(fscanf("argv[2],%s",node->word)  != EOF )
+char word[LENGTH + 1];
+node
+while(fscanf("argv[2],%s",word)  != EOF )
 {
+    node = malloc(sizeof(node));
+    strcopy(node->word,word);
     node = node->next;
     continue;
 }
@@ -28,6 +32,7 @@ node *table[N];
 bool check(const char *word)
 {
     // TODO
+
     return false;
 }
 
