@@ -6,7 +6,10 @@
 #include <stdlib.h>
 
 #include "dictionary.h"
-
+int strcasecomp(char *nword,char *word)
+{
+    return(strcpy(toupper(nword),toupper(word)));
+}
 // Represents a node in a hash table
 typedef struct node
 {
@@ -111,7 +114,7 @@ unsigned int size(void)
              trv = trv->next;
         }
      }
-     
+
     return size;
 }
 
