@@ -27,7 +27,7 @@ bool check(const char *word)
     node *trv = table[index];
     while(trv != NULL)
     {
-        if (strcopy(trv->word, word) == 0)
+        if (strcasecmp(trv->word, word) == 0)
         {
             return true;
         }
@@ -121,6 +121,6 @@ unsigned int size(void)
 bool unload(void)
 {
     // TODO
-    
+
     return false;
 }
