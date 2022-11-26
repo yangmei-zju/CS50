@@ -3,7 +3,7 @@
 #include <ctype.h>
 #include <stdbool.h>
 #include <string.h>
-#include <file
+#include <stdlib.h>
 
 #include "dictionary.h"
 
@@ -77,7 +77,7 @@ bool load(const char *dictionary)
         {
             int index = hash(word);
             strcopy(n->word,word);
-            if(table[index] == Null)
+            if(table[index] == NULL)
             {
                 table[index] = n;
             }
