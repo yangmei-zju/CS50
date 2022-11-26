@@ -33,10 +33,7 @@ bool check(const char *word)
         {
             return true;
         }
-        else
-        {
             trv = trv->next;
-        }
     }
 
     return false;
@@ -55,7 +52,7 @@ bool load(const char *dictionary)
     // TODO
     char word[LENGTH + 1];
     FILE *fp;
-    if((fp = fopen(dictionary,"a")) == NULL)
+    if((fp = fopen(dictionary,"r")) == NULL)
     {
         return false;
     }
