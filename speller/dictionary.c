@@ -23,8 +23,8 @@ node *table[N];
 bool check(const char *word)
 {
     // TODO
-    int m = hash(word);
-    node *trv = table[m];
+    int index = hash(word);
+    node *trv = table[index];
     while(trv != NULL)
     {
         if (strcopy(trv->word, word) == 0)
@@ -69,16 +69,16 @@ bool load(const char *dictionary)
         }
         else
         {
-            int m = hash(word);
+            int index = hash(word);
             strcopy(n->word,word);
-            if(table[m] == NULL)
+            if(table[index] == NULL)
             {
                 table = n;
             }
             else
             {
-                n->next = table[m];
-                table[m] = n;
+                n->next = table[index];
+                table[index] = n;
             }
         }
     }
