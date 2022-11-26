@@ -17,7 +17,7 @@ node;
 const unsigned int N = 26;
 char word[LENGTH + 1];
 node
-while(fscanf("argv[2],%s",word)  != EOF )
+while(fscanf(argv[2],"%s",word)  != EOF )
 {
     node = malloc(sizeof(node));
     strcopy(node->word,word);
