@@ -52,7 +52,6 @@ bool load(const char *dictionary)
 {
     // TODO
     char word[LENGTH + 1];
-    node *n;
     FILE *fp;
     if(fp = fopen(dictionary,"a") == NULL)
     {
@@ -75,12 +74,9 @@ bool load(const char *dictionary)
             }
             else
             {
-                node *trv;
-                
-
+                n->next = table[m];
+                table[m] = n;
             }
-
-            n = n->next;
         }
     }
 
