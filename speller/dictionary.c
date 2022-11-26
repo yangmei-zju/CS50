@@ -47,7 +47,7 @@ unsigned int hash(const char *word)
     int m = toupper(word[0]) - 'A';
     int n = toupper(word[1]) - 'A';
     int index = 4 * m + n * 26 / 4;
-
+    return index;
 }
 
 // Loads dictionary into memory, returning true if successful, else false
@@ -76,7 +76,7 @@ bool load(const char *dictionary)
             strcopy(n->word,word);
             if(table[index] == NULL)
             {
-                table = n;
+                table[index] = n;
             }
             else
             {
