@@ -62,8 +62,18 @@ bool load(const char *dictionary)
         }
         else
         {
+            int m = hash(word);
             strcopy(n->word,word);
-            
+            if(table[m] == NULL)
+            {
+                table = n;
+            }
+            else
+            {
+                node *trv;
+                
+            }
+
             n = n->next;
         }
     }
