@@ -53,15 +53,18 @@ bool load(const char *dictionary)
     // TODO
     char word[LENGTH + 1];
     FILE *fp;
+    int glag = 1;
     if(fp = fopen(dictionary,"a") == NULL)
     {
+        flag = 0;
         return false;
     }
     while(fscanf(fp,"%s",word)  != EOF)
     {
-        n = malloc(sizeof(node));
+        node *n = malloc(sizeof(node));
         if (n == NULL)
         {
+            flag = 0;
             return false;
         }
         else
@@ -79,7 +82,10 @@ bool load(const char *dictionary)
             }
         }
     }
-
+    if (flag == 1)
+    {
+        return true;
+    }
     return false;
 }
 
