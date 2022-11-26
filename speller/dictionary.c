@@ -53,6 +53,7 @@ bool load(const char *dictionary)
     // TODO
     char word[LENGTH + 1];
     node *n;
+    FILE *fp;
     
     while(fscanf(dictionnary,"%s",word)  != EOF)
     {
