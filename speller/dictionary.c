@@ -27,13 +27,13 @@ bool check(const char *word)
     // TODO
     int index = hash(word);
     node *trv = table[index];
-    while(trv != NULL)
+    while (trv != NULL)
     {
         if (strcasecmp(trv->word, word) == 0)
         {
             return true;
         }
-            trv = trv->next;
+        trv = trv->next;
     }
 
     return false;
@@ -52,11 +52,11 @@ bool load(const char *dictionary)
     // TODO
     char word[LENGTH + 1];
     FILE *fp;
-    if((fp = fopen(dictionary,"r")) == NULL)
+    if ((fp = fopen(dictionary, "r")) == NULL)
     {
         return false;
     }
-    while(fscanf(fp,"%s",word)  != EOF)
+    while (fscanf(fp, "%s", word)  != EOF)
     {
         node *n ;
         n = malloc(sizeof(node));
@@ -65,7 +65,7 @@ bool load(const char *dictionary)
             return false;
         }
         int index = hash(word);
-        strcpy(n->word,word);
+        strcpy(n->word, word);
         n->next = table[index];
         table[index] = n;
     }
@@ -79,15 +79,15 @@ unsigned int size(void)
     // TODO
     int wsize = 0;
     node *trv;
-    for(int i = 0; i < N; i++)
+    for (int i = 0; i < N; i++)
     {
         trv = table[i];
-        while(trv != NULL)
+        while (trv != NULL)
         {
-             wsize ++;
-             trv = trv->next;
+            wsize ++;
+            trv = trv->next;
         }
-     }
+    }
     return wsize ;
 }
 
@@ -99,13 +99,13 @@ bool unload(void)
     for (int i = 0; i < N; i++)
     {
         node *cursor = table[i];
-        while(cursor != NULL)
+        while (cursor != NULL)
         {
             node *temp = cursor;
             cursor = cursor->next;
             free(temp);
         }
-        if(cursor == NULL)
+        if (cursor == NULL)
         {
             flag = 1;
         }
@@ -114,7 +114,7 @@ bool unload(void)
             flag = 0;
         }
     }
-    if(flag == 0)
+    if (flag == 0)
     {
         return false;
     }
