@@ -32,7 +32,7 @@ node *table[N];
 bool check(const char *word)
 {
     // TODO
-    int m = toupper(word[0]) - 'A';
+    int m = hash(word);
     node *trv = table[m];
     while(trv != NULL)
     {
@@ -60,6 +60,7 @@ unsigned int hash(const char *word)
 bool load(const char *dictionary)
 {
     // TODO
+    
     return false;
 }
 
