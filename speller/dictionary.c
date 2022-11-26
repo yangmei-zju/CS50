@@ -17,6 +17,7 @@ node;
 
 // TODO: Choose number of buckets in hash table
 const unsigned int N = 26;
+int size = 0;
 
 // Hash table
 node *table[N];
@@ -64,16 +65,13 @@ bool load(const char *dictionary)
         {
             return false;
         }
-        else
-        {
-            int index = hash(word);
-            strcpy(n->word,word);
-            n->next = table[index];
-            table[index] = n;
-        }
+        int index = hash(word);
+        strcpy(n->word,word);
+        n->next = table[index];
+        table[index] = n;
     }
-    return true;
     fclose(fp);
+    return true;
 }
 
 // Returns number of words in dictionary if loaded, else 0 if not yet loaded
@@ -91,7 +89,6 @@ unsigned int size(void)
              trv = trv->next;
         }
      }
-
     return size;
 }
 
