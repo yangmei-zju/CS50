@@ -4,14 +4,9 @@
 #include <stdbool.h>
 #include <string.h>
 #include <stdlib.h>
+#include <strings.h>
 
 #include "dictionary.h"
-int strcasecmp(char *nword,char *word)
-{
-    char *nt = toupper(*nword);
-    char *t = toupper(*word);
-    return(strcpy(nt,t));
-}
 // Represents a node in a hash table
 typedef struct node
 {
