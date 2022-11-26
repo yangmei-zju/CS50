@@ -67,7 +67,6 @@ bool load(const char *dictionary)
         n = malloc(sizeof(node));
         if (n == NULL)
         {
-            flag = 0;
             return false;
         }
         else
@@ -78,9 +77,7 @@ bool load(const char *dictionary)
             table[index] = n;
         }
     }
-    if (flag == 1)
-    {
-        return true;
+    return true;
     fclose(fp);
 }
 
