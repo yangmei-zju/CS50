@@ -1,10 +1,10 @@
 // Implements a dictionary's functionality
-#include <stdio.h>
+#include <stdio.h>//fopen,fclose,fscanf
 #include <ctype.h>
-#include <stdbool.h>
-#include <string.h>
-#include <stdlib.h>
-#include <strings.h>
+#include <stdbool.h>//boll
+#include <string.h>//strcopy
+#include <stdlib.h>//malloc,free,FILE
+#include <strings.h>//strcasecmp
 
 #include "dictionary.h"
 // Represents a node in a hash table
