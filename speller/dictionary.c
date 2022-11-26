@@ -1,7 +1,9 @@
 // Implements a dictionary's functionality
-
+#include <stdio.h>
 #include <ctype.h>
 #include <stdbool.h>
+#include <string.h>
+#include <file
 
 #include "dictionary.h"
 
@@ -57,14 +59,15 @@ bool load(const char *dictionary)
     char word[LENGTH + 1];
     FILE *fp;
     int flag = 1;
-    if((fp = fopen(dictionary,"a")) == Null)
+    if((fp = fopen(dictionary,"a")) == NULL)
     {
         flag = 0;
         return false;
     }
     while(fscanf(fp,"%s",word)  != EOF)
     {
-        node *n = malloc(sizeof(node));
+        node *n ;
+        n = malloc(sizeof(node));
         if (n == NULL)
         {
             flag = 0;
