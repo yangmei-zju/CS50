@@ -76,7 +76,7 @@ bool load(const char *dictionary)
         else
         {
             int index = hash(word);
-            strcopy(n->word,word);
+            strcpy(n->word,word);
             if(table[index] == NULL)
             {
                 table[index] = n;
@@ -101,23 +101,17 @@ unsigned int size(void)
 {
     // TODO
     int size = 0;
-    if(load(dictionary) == false)
+    node *trv;
+    for(int i = 0; i < N; i++)
     {
-        return 0;
-    }
-    else
-    {
-        node *trv;
-        for(int i = 0; i < N; i++)
+        trv = table[i];
+        while(trv != NULL)
         {
-            trv = table[i];
-            while(trv != NULL)
-            {
-                size ++;
-                trv = trv->next;
-            }
+             size ++;
+             trv = trv->next;
         }
-    }
+     }
+     
     return size;
 }
 
@@ -135,7 +129,7 @@ bool unload(void)
             cursor = cursor->next;
             free(temp);
         }
-        if(table[i] == Null)
+        if(table[i] == NULL)
         {
             flag = 1;
         }
