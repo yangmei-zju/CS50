@@ -32,7 +32,19 @@ node *table[N];
 bool check(const char *word)
 {
     // TODO
-    
+    int m = toupper(word[0]) - 'A';
+    node *trv = table[m];
+    while(trv != NULL)
+    {
+        if (strcopy(trv->word, word) == 0)
+        {
+            return true;
+        }
+        else
+        {
+            trv = trv->next;
+        }
+    }
 
     return false;
 }
