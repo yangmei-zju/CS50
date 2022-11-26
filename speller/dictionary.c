@@ -25,7 +25,7 @@ bool check(const char *word)
     // TODO
     int index = hash(word);
     node *trv = table[index];
-    while(trv != NULL)
+    while(trv != Null)
     {
         if (strcasecmp(trv->word, word) == 0)
         {
@@ -56,8 +56,8 @@ bool load(const char *dictionary)
     // TODO
     char word[LENGTH + 1];
     FILE *fp;
-    int glag = 1;
-    if(fp = fopen(dictionary,"a") == NULL)
+    int flag = 1;
+    if((fp = fopen(dictionary,"a")) == Null)
     {
         flag = 0;
         return false;
@@ -74,7 +74,7 @@ bool load(const char *dictionary)
         {
             int index = hash(word);
             strcopy(n->word,word);
-            if(table[index] == NULL)
+            if(table[index] == Null)
             {
                 table[index] = n;
             }
@@ -131,7 +131,7 @@ bool unload(void)
             cursor = cursor->next;
             free(temp);
         }
-        if(table[i] == NULL)
+        if(table[i] == Null)
         {
             flag = 1;
         }
