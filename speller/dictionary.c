@@ -96,12 +96,31 @@ bool load(const char *dictionary)
 unsigned int size(void)
 {
     // TODO
-    return 0;
+    int size = 0;
+    if(load(dictionary) == false)
+    {
+        return 0;
+    }
+    else
+    {
+        node *trv;
+        for(int i = 0; i < N; i++)
+        {
+            trv = table[i];
+            while(trv != NULL)
+            {
+                size ++;
+                trv = trv->next;
+            }
+        }
+    }
+    return size;
 }
 
 // Unloads dictionary from memory, returning true if successful, else false
 bool unload(void)
 {
     // TODO
+    
     return false;
 }
