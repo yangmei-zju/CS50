@@ -74,22 +74,13 @@ bool load(const char *dictionary)
         {
             int index = hash(word);
             strcpy(n->word,word);
-            if(table[index] == NULL)
-            {
-                table[index] = n;
-            }
-            else
-            {
-                n->next = table[index];
-                table[index] = n;
-            }
+            n->next = table[index];
+            table[index] = n;
         }
     }
     if (flag == 1)
     {
         return true;
-    }
-    return false;
     fclose(fp);
 }
 
