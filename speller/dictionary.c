@@ -16,12 +16,12 @@ node;
 // TODO: Choose number of buckets in hash table
 const unsigned int N = 26;
 char word[LENGTH + 1];
-node
+node *n = NULL;
 while(fscanf(argv[2],"%s",word)  != EOF )
 {
-    node = malloc(sizeof(node));
-    strcopy(node->word,word);
-    node = node->next;
+    n = malloc(sizeof(node));
+    strcopy(n->word,word);
+    n = n->next;
     continue;
 }
 
