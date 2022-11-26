@@ -142,5 +142,8 @@ bool unload(void)
     {
         return false;
     }
-
+    else
+    {
+        return true;
+    }
 }
