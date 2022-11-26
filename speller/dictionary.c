@@ -8,7 +8,9 @@
 #include "dictionary.h"
 int strcasecomp(char *nword,char *word)
 {
-    return(strcpy(toupper(nword),toupper(word)));
+    char *nt = toupper(*nword);
+    char *t = toupper(*word);
+    return(strcpy(nt,t);
 }
 // Represents a node in a hash table
 typedef struct node
