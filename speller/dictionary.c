@@ -55,10 +55,8 @@ bool load(const char *dictionary)
     // TODO
     char word[LENGTH + 1];
     FILE *fp;
-    int flag = 1;
     if((fp = fopen(dictionary,"a")) == NULL)
     {
-        flag = 0;
         return false;
     }
     while(fscanf(fp,"%s",word)  != EOF)
@@ -114,7 +112,7 @@ bool unload(void)
             cursor = cursor->next;
             free(temp);
         }
-        if(table[i] == NULL)
+        if(cursor == NULL)
         {
             flag = 1;
         }
