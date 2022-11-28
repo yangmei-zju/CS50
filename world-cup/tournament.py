@@ -25,7 +25,7 @@ def main():
         teams.append(team)
 
     counts = {}
-    #counts is a dictionary 
+    #counts is a dictionary with winner as its keys
     # TODO: Simulate N tournaments and keep track of win counts
     for i in range(N):
         winner = simulate_tournaments
@@ -66,7 +66,7 @@ def simulate_tournament(teams):
     # TODO
     while len(teams) > 1:
          teams = simulate_round(teams)
-
+    # this while-loop ends with the final winner
     return teams[0]["team"]
 
 
