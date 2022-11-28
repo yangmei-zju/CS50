@@ -19,9 +19,7 @@ def main():
     # TODO: Read teams into memory from file
     with open(sys.argv[1]) as file:
         reader = csv.Dictreader(file)
-    i = 0
     for row in reader:
-        teams[i] = row["team"]
         count[team] = row["rating"]
 
 
