@@ -18,6 +18,7 @@ def main():
     # TODO: Read teams into memory from file
     with open(sys.argv[1],"r") as file:
         reader = csv.DictReader(file)
+        next(reader)
 
     for row in reader:
         #team is a dictionnary with two keys "team" and "rating"
@@ -66,7 +67,7 @@ def simulate_tournament(teams):
     while len(teams) > 1:
          teams = simulate_round(teams)
     # this while-loop ends with the final winner
-    
+
     return teams[0]["team"]
 
 
