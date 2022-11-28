@@ -1,11 +1,10 @@
-# TODO
 def space_print(n):
     for i in range(n):
         print(" ",end = "")
 
 def hash_print(n):
     for i in range(n):
-        print("#",end = "")
+        print("#", end = "")
 
 while True:
     try:
