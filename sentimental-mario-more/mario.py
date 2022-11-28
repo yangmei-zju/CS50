@@ -7,20 +7,20 @@ def hash_print(n):
     for i in range(n):
         print("#",end = "")
 
-while true:
+while True:
     try:
-        height = int(input("Height:"))
+        height = int(input("Height: "))
     except ValueError:
         continue
     if height > 0 and height < 9:
         break
 
-for i in range(1,height,1):
+for i in range(1,height + 1,1):
     space_print(height - i)
     hash_print(i)
     print("  ",end = "")
     hash_print(i)
-print()
+    print()
 
 
 
