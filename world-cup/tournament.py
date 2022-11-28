@@ -19,13 +19,14 @@ def main():
         reader = csv.DictReader(file)
     for row in reader:
         #team is a dictionnary with two keys "team" and "rating"
-        row["rating"] = int( row["rating"])
+        row["rating"] = int(row["rating"])
         teams.append(row)
+
     counts = {}
     #counts is a dictionary with winner as its keys
     # TODO: Simulate N tournaments and keep track of win counts
     for i in range(N):
-        winner = simulate_tournaments
+        winner = simulate_tournaments(teams)
         if winner in count:
             counts[winner] += 1
         else:
