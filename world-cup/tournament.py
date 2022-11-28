@@ -19,8 +19,7 @@ def main():
     with open(sys.argv[1]) as file:
         reader = csv.Dictreader(file)
     for row in reader:
-        team = row["team"]
-        teams[team] = 
+        teams = row["team"]
 
     counts = {}
     # TODO: Simulate N tournaments and keep track of win counts
