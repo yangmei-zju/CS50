@@ -1,8 +1,12 @@
 # TODO
 def main():
-    height = int(input(Height:))
-    while height < 0 or height > 9:
-        height = int(input(Height:))
+    while true:
+        try:
+            height = int(input(Height:))
+        except ValueError:
+            continue
+        if height > 0 and height < 9:
+            break
     for i in range(1,height,1):
         space_print()
 
