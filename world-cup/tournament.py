@@ -15,7 +15,7 @@ def main():
     teams = []
     # the teams is a list of dictionary
     # TODO: Read teams into memory from file
-    with open(sys.argv[1]) as file:
+    with open(sys.argv[1],"r") as file:
         reader = csv.DictReader(file)
     for row in reader:
         #team is a dictionnary with two keys "team" and "rating"
