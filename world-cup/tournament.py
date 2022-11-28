@@ -9,7 +9,6 @@ N = 1000
 
 
 def main():
-
     # Ensure correct usage
     if len(sys.argv) != 2:
         sys.exit("Usage: python tournament.py FILENAME")
@@ -50,14 +49,12 @@ def simulate_game(team1, team2):
 def simulate_round(teams):
     """Simulate a round. Return a list of winning teams."""
     winners = []
-
     # Simulate games for all pairs of teams
     for i in range(0, len(teams), 2):
         if simulate_game(teams[i], teams[i + 1]):
             winners.append(teams[i])
         else:
             winners.append(teams[i + 1])
-
     return winners
 
 
