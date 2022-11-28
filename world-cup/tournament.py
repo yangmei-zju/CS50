@@ -12,7 +12,7 @@ def main():
     # Ensure correct usage
     if len(sys.argv) != 2:
         sys.exit("Usage: python tournament.py FILENAME")
-        
+
     teams = []
     # the teams is a list of dictionary
     # TODO: Read teams into memory from file
@@ -27,11 +27,12 @@ def main():
     #counts is a dictionary with winner as its keys
     # TODO: Simulate N tournaments and keep track of win counts
     for i in range(N):
-        winner = simulate_tournaments(teams)
+        winner = simulate_tournament(teams)
         if winner in counts:
             counts[winner] += 1
         else:
             counts[winner] = 1
+            
     # Print each team's chances of winning, according to simulation
     for team in sorted(counts, key=lambda team: counts[team], reverse=True):
         print(f"{team}: {counts[team] * 100 / N:.1f}% chance of winning")
