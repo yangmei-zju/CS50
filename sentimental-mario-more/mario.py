@@ -8,3 +8,4 @@ for i in range(height)
   ##  ##
  ###  ###
 ####  ####
+def space_print:
