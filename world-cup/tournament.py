@@ -23,6 +23,8 @@ def main():
         teams[i] = row["team"]
 
     counts = {}
+    for team in teams:
+        counts[team] = 
     # TODO: Simulate N tournaments and keep track of win counts
 
     # Print each team's chances of winning, according to simulation
