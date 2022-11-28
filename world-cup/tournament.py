@@ -18,9 +18,10 @@ def main():
     # TODO: Read teams into memory from file
     with open(sys.argv[1],"r") as file:
         reader = csv.DictReader(file)
-        next(reader)
+    #use the first row as the keys of row
+    
     for row in reader:
-        #team is a dictionnary with two keys "team" and "rating"
+        #row is a dictionnary with two keys "team" and "rating"
         row["rating"] = int(row["rating"])
         teams.append(row)
 
