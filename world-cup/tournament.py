@@ -22,9 +22,9 @@ def main():
         team["rating"] = int( team["rating"])
         teams.append(team)
 
-    count{}
+    count = {}
     # TODO: Simulate N tournaments and keep track of win counts
-    for i in range(N)
+    for i in range(N):
         winner = simulate_tournaments
         if winner in count
             count[winner] += 1
