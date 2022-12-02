@@ -1,5 +1,4 @@
 # TODO
-import
 text = input("Text: ")
 words = 1
 sentences = 1
@@ -23,7 +22,7 @@ if index < 1.5:
     print("Before Grade 1")
 elif index >= 15.5:
     print("Grade 16+")
-elif:
+else:
     index = index // 1
     print(f"Grade {index}")
 
