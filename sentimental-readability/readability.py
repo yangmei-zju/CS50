@@ -4,7 +4,6 @@ text = get_string("Text: ")
 words = 1
 sentences = 0
 letters = 0
-i = 0
 for word in text:
     if word == ' ':
         words = words + 1
