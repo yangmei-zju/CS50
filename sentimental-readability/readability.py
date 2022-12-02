@@ -1,5 +1,6 @@
 # TODO
-text = input("Text: ")
+import get_string() from CS50
+text = get_string("Text: ")
 text = text + '#'
 words = 1
 sentences = 1
