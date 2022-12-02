@@ -7,11 +7,11 @@ letters = 0
 for word in text:
     if word == ' ':
         words = words + 1
-    elif word == '.' or text[i] == '?' or text[i] == '!':
+    elif word == '.' or word == '?' or word == '!':
         sentences = sentences +  1
-    elif word >= 'a' or text[i] <= 'z':
+    elif word >= 'a' or word <= 'z':
         letters = letters + 1
-    elif word >= 'A' or text[i] <= 'Z':
+    elif word >= 'A' or word <= 'Z':
         letters = letters + 1
     next(word)
 
