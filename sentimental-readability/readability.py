@@ -22,12 +22,12 @@ while True:
 l = letters / words * 100
 s = sentences / words * 100
 index = 0.0588 * l - 0.296 * s - 15.8
-if index < 1.5:
+index = round(index)
+if index < 1:
     print("Before Grade 1")
-elif index >= 15.5:
+elif index >= 16:
     print("Grade 16+")
 else:
-    index = round(index)
     print(f"Grade {index}")
 
 
