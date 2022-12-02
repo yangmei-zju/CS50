@@ -3,7 +3,7 @@ from cs50 import get_string
 text = get_string("Text: ")
 text = text + '#'
 words = 1
-sentences = 1
+sentences = 0
 letters = 0
 i = 0
 while True:
