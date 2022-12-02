@@ -38,7 +38,6 @@ int main()
         if (index >= (int)index + 0.5)
         {
             printf("Grade %d\n",(int)index + 1);
-
         }
         else
         {
