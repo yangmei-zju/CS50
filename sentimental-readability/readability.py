@@ -5,7 +5,7 @@ words = 1
 sentences = 0
 letters = 0
 i = 0
-for text[i] in text
+for text[i] in text:
     elif text[i] == ' ':
         words = words + 1
     elif text[i] == '.' and text[i] == '?'and text[i] == '!':
