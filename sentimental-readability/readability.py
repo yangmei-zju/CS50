@@ -8,11 +8,13 @@ i = 0
 while true:
     if text[i] == '\0':
         break
-    if text[i] == ' ':
+    elif text[i] == ' ':
         words = words + 1
-    if text[i] == '.' and text[i] == '?'and text[i] == '!':
+    elif text[i] == '.' and text[i] == '?'and text[i] == '!':
         sentences = sentences +  1
-    if text[i] ==
+    elif text[i] >= 'a' and text[i] <= 'z':
+        letters = letters + 1
+    elif text[i] >= 'A' and text[i] <= 'Z':
         letters = letters + 1
     i = i + 1
 
@@ -21,5 +23,7 @@ if index < 1.5:
     print("Before Grade 1")
 elif index >= 15.5:
     print("Grade 16+")
-elif in
+elif:
+    index = index // 1
+    print(f"Grade {index}")
 
