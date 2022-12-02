@@ -1,5 +1,5 @@
 # TODO
-text = input("Text: ")
+text = input("Text:")
 text = text + '#'
 words = 1
 sentences = 1
