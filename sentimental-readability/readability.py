@@ -1,5 +1,5 @@
 # TODO
-import get_string from CS50
+from cs50 import get_string
 text = get_string("Text: ")
 text = text + '#'
 words = 1
