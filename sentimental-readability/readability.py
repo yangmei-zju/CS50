@@ -1,11 +1,12 @@
 # TODO
 text = input("Text: ")
+text = text + '#'
 words = 1
 sentences = 1
 letters = 0
 i = 0
 while True:
-    if text[i] == '\0':
+    if text[i] == '#':
         break
     elif text[i] == ' ':
         words = words + 1
