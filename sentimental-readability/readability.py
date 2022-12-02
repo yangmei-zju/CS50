@@ -17,7 +17,7 @@ for word in text:
 l = letters / words * 100
 s = sentences / words * 100
 index = 0.0588 * l - 0.296 * s - 15.8
-index = round(index)
+index = int(index)
 if index < 1:
     print("Before Grade 1")
 elif index >= 16:
