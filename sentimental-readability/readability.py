@@ -1,1 +1,2 @@
 # TODO
+text = input("Text: ")
