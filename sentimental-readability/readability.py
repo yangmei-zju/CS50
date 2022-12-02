@@ -28,6 +28,6 @@ elif index >= 15.5:
 else:
     index = int(index // 1)
     print(f"Grade {index}")
-
+print(text)
 
 
