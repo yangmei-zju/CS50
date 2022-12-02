@@ -17,7 +17,7 @@ while True:
     elif text[i] >= 'A' and text[i] <= 'Z':
         letters = letters + 1
     i = i + 1
-    
+
 l = letters / words * 100
 s = sentences / words * 100
 index = 0.0588 * l - 0.296 * s - 15.8
@@ -26,7 +26,7 @@ if index < 1.5:
 elif index >= 15.5:
     print("Grade 16+")
 else:
-    index = index // 1
+    index = int(index // 1)
     print(f"Grade {index}")
 
 
