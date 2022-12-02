@@ -26,9 +26,7 @@ if index < 1.5:
 elif index >= 15.5:
     print("Grade 16+")
 else:
-    index = int(index // 1)
+    index = round(index)
     print(f"Grade {index}")
-print(text)
-print(round(15.72))
 
 
