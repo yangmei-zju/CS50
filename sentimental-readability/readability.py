@@ -4,16 +4,20 @@ text = get_string("Text: ")
 words = 1
 sentences = 0
 letters = 0
-for word in text:
-    if word == ' ':
+i = 0
+while True:
+    if text[i] == '#':
+        break
+    elif text[i] == ' ':
         words = words + 1
-    elif word == '.' or word == '?' or word == '!':
+    elif text[i] == '.' or text[i] == '?' or text[i] == '!':
         sentences = sentences +  1
     elif word >= 'a' or word <= 'z':
         letters = letters + 1
     elif word >= 'A' or word <= 'Z':
         letters = letters + 1
     next(word)
+
 
 l = letters / words * 100
 s = sentences / words * 100
