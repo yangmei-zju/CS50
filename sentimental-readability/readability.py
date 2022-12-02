@@ -1,6 +1,6 @@
 # TODO
 from cs50 import get_string
-text = get_string("Text: ")y
+text = get_string("Text: ")
 words = 1
 sentences = 0
 letters = 0
