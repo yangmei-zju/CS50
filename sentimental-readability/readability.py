@@ -2,4 +2,8 @@
 text = input("Text: ")
 words = 1
 sentences = 1
-for i in range(
+i = 0
+while true:
+    if text[i] == '\0':
+        break
+    
