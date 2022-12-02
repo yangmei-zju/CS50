@@ -17,6 +17,7 @@ while True:
     elif text[i] >= 'A' and text[i] <= 'Z':
         letters = letters + 1
     i = i + 1
+    
 l = letters / words * 100
 s = sentences / words * 100
 index = 0.0588 * l - 0.296 * s - 15.8
