@@ -4,7 +4,7 @@ words = 1
 sentences = 1
 letters = 0
 i = 0
-while true:
+while True:
     if text[i] == '\0':
         break
     elif text[i] == ' ':
