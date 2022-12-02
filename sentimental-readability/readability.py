@@ -8,7 +8,7 @@ for word in text:
     if word == ' ':
         words = words + 1
     elif word == '.' or word == '?' or word == '!':
-        sentences = sentences +  1
+        sentences = sentences + 1
     elif word >= 'a' and word <= 'z':
         letters = letters + 1
     elif word >= 'A' and word <= 'Z':
@@ -25,5 +25,4 @@ elif index >= 16:
     print("Grade 16+")
 else:
     print(f"Grade {index}")
-
 
