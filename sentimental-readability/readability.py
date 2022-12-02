@@ -29,6 +29,6 @@ else:
     index = int(index // 1)
     print(f"Grade {index}")
 print(text)
-print(15.72//1)
+print(round(15.72))
 
 
