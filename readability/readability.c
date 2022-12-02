@@ -23,7 +23,7 @@ int main()
     l = (float)letters / (float)words* 100;//如果没有类型转换则前面的除法结果为整数
     s = (float)sentences /(float) words * 100;
     index = 0.0588 * l - 0.296 * s - 15.8;
-
+    printf("%f,%f,%f",l,s,index);
 
     if (index < 1.5)
     {
