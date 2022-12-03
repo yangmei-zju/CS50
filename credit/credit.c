@@ -47,7 +47,6 @@ int main(void)
     int length = 0;
     length = i - 1;
     sum = sum1 + sum2;
-    printf("%ld",sum);
 
     //如果sum整除10则进入下一步判断
     if (sum % 10 == 0)
@@ -61,7 +60,6 @@ int main(void)
             b = b / 10;
         }
         while (b > 100);
-        printf("%ld\n",  b);
         //根据b判断credit类型
         if ((b == 34 || b == 37) && length == 15)
         {
