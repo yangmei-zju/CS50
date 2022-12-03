@@ -19,7 +19,6 @@ int main(void)
     number = Number;
     for (i = 1; number > 0; i++)
     {
-
         a = number % 10;
         number = number / 10;
         if (i % 2 == 0)
@@ -43,13 +42,12 @@ int main(void)
         {
             sum2 = sum2 + a;
         }
-
     }
 
     int length = 0;
     length = i - 1;
     sum = sum1 + sum2;
-
+    printf("%ld",sum);
 
     //如果sum整除10则进入下一步判断
     if (sum % 10 == 0)
