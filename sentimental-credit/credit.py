@@ -5,6 +5,7 @@ while True:
     if int(number) >= 0:
         break
 length = 1
+sum = 0
 for d in number:
     n = int(d)
     if length % 2 != 0:
