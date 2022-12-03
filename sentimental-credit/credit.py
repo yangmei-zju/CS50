@@ -1,23 +1,23 @@
-#get credit number that is positive
+# get credit number that is positive
 while True:
     number = input("Number: ")
     if int(number) >= 0:
         break
 
-#the length of the number and sum of its digits
+# the length of the number and sum of its digits
 length = 1
 sum = 0
 for d in number:
     n = int(d)
     if length % 2 == 0:
         sum = sum + 2 * n % 10 + 2 * n // 10
-    else :
+    else:
         sum = sum + n
-    length = length  + 1
+    length = length + 1
 
 length = length - 1
 if sum % 10 == 0:
-    b = int (number)
+    b = int(number)
     while True:
         b = b // 10
         if b < 100:
@@ -33,6 +33,5 @@ if sum % 10 == 0:
         print("INVALID")
 
 else:
-    print ("INVALID")
-
+    print("INVALID")
 
