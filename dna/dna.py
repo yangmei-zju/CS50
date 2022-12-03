@@ -8,7 +8,11 @@ def main():
     if len(sys.argv) != 3:
         sys.exit("Usage: python dna.py FILENAME FILENAME")
     # TODO: Read database file into a variable
-    with open
+    
+    with open(sys.argv[1], "r") as file1:
+        reader = csv.DictReader(file1)
+        for row in reader:
+
     # TODO: Read DNA sequence file into a variable
 
     # TODO: Find longest match of each STR in DNA sequence
