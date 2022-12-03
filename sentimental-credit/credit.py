@@ -19,6 +19,7 @@ for d in number:
 length = length - 1
 
 if sum % 10 == 0:
+    b = int (number)
     while True:
         b = b % 10
         if b < 100:
