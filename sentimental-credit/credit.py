@@ -18,8 +18,10 @@ for d in number:
 length = length - 1
 sum = sum1 + sum2
 if sum % 10 == 0:
-    while b > 100:
+    while True:
         b = b % 10
+        if b < 100:
+            break
 
     if (b == 34 or b == 37) and length == 15:
         print("AMEX")
@@ -32,5 +34,5 @@ if sum % 10 == 0:
 
 else:
     print("INVALID”)
-    
+
 
