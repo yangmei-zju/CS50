@@ -14,6 +14,7 @@ for d in number:
     else:
         sum = sum + n
     length = length + 1
+    
 print(sum)
 length = length - 1
 if sum % 10 == 0:
