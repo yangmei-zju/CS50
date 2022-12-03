@@ -5,8 +5,10 @@ while True:
         break
 
 # the length of the number and sum of its digits
-length = 1
+length = 0
 sum = 0
+for d in number:
+    length = length + 1
 for d in number:
     n = int(d)
     if length % 2 == 0:
@@ -14,7 +16,7 @@ for d in number:
     else:
         sum = sum + n
     length = length + 1
-    
+
 print(sum)
 length = length - 1
 if sum % 10 == 0:
