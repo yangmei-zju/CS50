@@ -26,7 +26,7 @@ if sum % 10 == 0:
         b = b // 10
         if b < 100:
             break
-    print(b)
+
     if (b == 34 or b == 37) and length == 15:
         print("AMEX")
     elif b >= 51 and b <= 55 and length == 16:
