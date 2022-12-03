@@ -7,17 +7,18 @@ while True:
 # the length of the number and sum of its digits
 length = 0
 sum = 0
-for d in number:
+for t in number:
     length = length + 1
+
+i = 0
 for d in number:
     n = int(d)
-    if length % 2 == 0:
+    if (length % 2 == 0 and i % 2 == 0) or (length % 2 != 0 and i % 2 != 0):
         sum = sum + 2 * n % 10 + 2 * n // 10
     else:
         sum = sum + n
-    length = length + 1
+    i = i + 1
 
-print(sum)
 length = length - 1
 if sum % 10 == 0:
     b = int(number)
