@@ -6,7 +6,7 @@ int main(void)
     long Number = 0;
     do
     {
-        Number = get_long("Number:");
+        Number = get_long("Number: ");
     }
     while (Number < 0);
     //计算偶数位的2倍和奇数位的总和sum以及长度length
@@ -47,7 +47,7 @@ int main(void)
     int length = 0;
     length = i - 1;
     sum = sum1 + sum2;
-
+    printf("%ld",sum);
     //如果sum整除10则进入下一步判断
     if (sum % 10 == 0)
     {
