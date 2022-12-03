@@ -19,7 +19,6 @@ for d in number:
         sum = sum + n
     i = i + 1
 
-length = length - 1
 if sum % 10 == 0:
     b = int(number)
     while True:
