@@ -15,9 +15,9 @@ for d in number:
             sum = sum + 2 * n % 10 + 2 * n // 10
     else :
         sum = sum + 2 * n
+    length = length  + 1
 
 length = length - 1
-
 if sum % 10 == 0:
     b = int (number)
     while True:
