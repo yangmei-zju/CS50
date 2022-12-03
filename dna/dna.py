@@ -14,7 +14,11 @@ def main():
         for row in reader:
             database.append(row)
     # TODO: Read DNA sequence file into a variable
-    
+
+    with open(sys.argv[2], "r") as file2:
+        reader = csv.DictReader(file2)
+        for  in reader:
+
 
     # TODO: Find longest match of each STR in DNA sequence
 
