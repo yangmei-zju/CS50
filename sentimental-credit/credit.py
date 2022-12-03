@@ -18,6 +18,7 @@ for d in number:
 length = length - 1
 sum = sum1 + sum2
 if sum // 10 == 0:
-    
+    while b > 100:
+        b = b / 10
 
 
