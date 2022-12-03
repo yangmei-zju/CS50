@@ -37,8 +37,6 @@ int main(void)
                 c2 = (a * 2) % 10;
                 c = c1 + c2;
             }
-
-
             sum1 = sum1 + c;
         }
         else

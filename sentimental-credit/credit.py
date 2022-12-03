@@ -9,13 +9,10 @@ length = 1
 sum = 0
 for d in number:
     n = int(d)
-    if length % 2 != 0:
-        if n < 5:
-            sum = sum + 2 * n
-        else:
-            sum = sum + 2 * n % 10 + 2 * n // 10
+    if length % 2 == 0:
+        sum = sum + 2 * n % 10 + 2 * n // 10
     else :
-        sum = sum + 2 * n
+        sum = sum + n
     length = length  + 1
 
 length = length - 1
