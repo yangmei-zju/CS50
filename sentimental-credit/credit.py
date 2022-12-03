@@ -1,8 +1,10 @@
-
+#get credit number that is positive
 while True:
     number = input("Number: ")
     if int(number) >= 0:
         break
+
+#the length of the number and sum of its digits
 length = 1
 sum = 0
 for d in number:
