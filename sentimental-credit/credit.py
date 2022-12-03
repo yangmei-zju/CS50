@@ -11,7 +11,7 @@ for d in number:
         if n < 5:
             sum1 = sum1 + 2 * n
         else:
-            sum1 = sum1 + 2 * n % 10 + 2 * n / 10
+            sum1 = sum1 + 2 * n % 10 + 2 * n // 10
     else :
         sum2 = sum2 + 2 * n
 
