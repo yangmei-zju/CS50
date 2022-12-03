@@ -14,7 +14,7 @@ for d in number:
     else:
         sum = sum + n
     length = length + 1
-
+print(sum)
 length = length - 1
 if sum % 10 == 0:
     b = int(number)
@@ -22,7 +22,7 @@ if sum % 10 == 0:
         b = b // 10
         if b < 100:
             break
-
+    print(b)
     if (b == 34 or b == 37) and length == 15:
         print("AMEX")
     elif b >= 51 and b <= 55 and length == 16:
