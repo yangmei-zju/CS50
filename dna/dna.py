@@ -73,7 +73,7 @@ def longest_match(sequence, subsequence):
         # Check for a subsequence match in a "substring" (a subset of characters) within sequence
         # If a match, move substring to next potential match in sequence
         # Continue moving substring and checking for matches until out of consecutive matches
-        while True:
+
 
             # Adjust substring start and end
             start = i + count * subsequence_length
@@ -84,8 +84,7 @@ def longest_match(sequence, subsequence):
                 count += 1
 
             # If there is no match in the substring
-            else:
-                break
+
 
         # Update most consecutive matches found
         longest_run = max(longest_run, count)
