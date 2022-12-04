@@ -37,10 +37,15 @@ def main():
                 break
             else:
                 check = 1
-            if check == 0:
-                continue
-            else:
-                print(individual["name"])
+
+        if check == 0:
+            continue
+        else:
+             print(individual["name"])
+             break
+
+    if check == 0:
+        print(")
 
 
     return
