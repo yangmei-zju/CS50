@@ -19,11 +19,10 @@ def main():
     with open(sys.argv[1],"r") as file:
         reader = csv.DictReader(file)
     #use the first row as the keys of row
-
-    for row in reader:
-        #row is a dictionnary with two keys "team" and "rating"
-        row["rating"] = int(row["rating"])
-        teams.append(row)
+        for row in reader:
+            #row is a dictionnary with two keys "team" and "rating"
+            row["rating"] = int(row["rating"])
+            teams.append(row)
 
     counts = {}
     #counts is a dictionary with winner as its keys
