@@ -25,8 +25,8 @@ def main():
     with open(sys.argv[2], "r") as file2:
         reader = csv.reader(file2)
         for string in reader:
-                for character in string[0]:
-                    list.append(character)
+            for character in string[0]:
+                list.append(character)
 
         sequence = ''.join(list)
 
@@ -48,8 +48,8 @@ def main():
         if check == 0:
             continue
         else:
-             print(individual["name"])
-             break
+            print(individual["name"])
+            break
 
     if check == 0:
         print("No match")
