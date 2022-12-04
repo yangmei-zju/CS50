@@ -34,7 +34,6 @@ def main():
     match = {}
     for str in STRs:
         match[str] = longest_match(sequence, str)
-    print(match)
 
     # TODO: Check database for matching profiles
     check = 0
