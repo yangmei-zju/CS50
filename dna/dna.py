@@ -32,8 +32,9 @@ def main():
     for individual in database:
         for subsequence in str:
             if int(individual[subsequence]) != match[subsquence]:
+                
                 continue
-            else :
+
     return
 
 
