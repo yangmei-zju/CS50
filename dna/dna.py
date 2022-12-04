@@ -22,6 +22,7 @@ def main():
     STRs = []
     STRs = keys[1:]
     # TODO: Read DNA sequence file into a variable
+    list = []
     with open(sys.argv[2], "r") as file2:
         reader = csv.reader(file2)
         for string in reader:
