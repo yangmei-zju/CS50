@@ -29,7 +29,8 @@ def main():
         match[subsquence] = longest_match(sequence, subsequence)
 
     # TODO: Check database for matching profiles
-    for induvdule
+    for individual in database:
+        
     return
 
 
