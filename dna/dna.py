@@ -11,7 +11,6 @@ def main():
     database = []
     with open(sys.argv[1], "r") as file1:
         reader = csv.DictReader(file1)
-        next(reader)
         for row in reader:
             database.append(row)
 
@@ -38,7 +37,7 @@ def main():
     print(match)
 
     # TODO: Check database for matching profiles
-
+    check = 0
     for individual in database:
         for str in STRs:
             if int(individual[str]) == match[str]:
