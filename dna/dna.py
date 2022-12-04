@@ -15,11 +15,12 @@ def main():
         for row in reader:
             database.append(row)
 
-    
-        for keys in row:
-            key.append(keys)
+        keys = []
+        for key in row:
+            keys.append(key)
 
-    STRs = key[1:]
+    STRs = []
+    STRs = keys[1:]
     # TODO: Read DNA sequence file into a variable
     sequence = []
     with open(sys.argv[2], "r") as file2:
