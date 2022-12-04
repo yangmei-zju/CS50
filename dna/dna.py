@@ -18,7 +18,7 @@ def main():
         for keys in row:
             key.append(keys)
 
-        STRs = keys[1:]
+
     # TODO: Read DNA sequence file into a variable
     sequence = []
     with open(sys.argv[2], "r") as file2:
