@@ -38,14 +38,14 @@ def main():
     print(match)
 
     # TODO: Check database for matching profiles
-    check = 0
+
     for individual in database:
         for str in STRs:
-            if int(individual[str]) != match[str]:
+            if int(individual[str]) == match[str]:
+                check = 1
+            else:
                 check = 0
                 break
-            else:
-                check = 1
 
         if check == 0:
             continue
