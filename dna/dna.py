@@ -29,11 +29,19 @@ def main():
         match[subsquence] = longest_match(sequence, subsequence)
 
     # TODO: Check database for matching profiles
+    check = 0
     for individual in database:
         for subsequence in str:
             if int(individual[subsequence]) != match[subsquence]:
-                
+                check = 0
+                break
+            else:
+                check = 1
+            if check == 0:
                 continue
+            else:
+                print(individual["name"])
+
 
     return
 
