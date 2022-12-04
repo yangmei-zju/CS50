@@ -22,12 +22,10 @@ def main():
     STRs = []
     STRs = keys[1:]
     # TODO: Read DNA sequence file into a variable
-    sequence = []
     with open(sys.argv[2], "r") as file2:
         reader = csv.reader(file2)
         for string in reader:
-            for character in string[0]:
-                sequence.append(character)
+                sequence = string
 
     # TODO: Find longest match of each STR in DNA sequence
     match = {}
