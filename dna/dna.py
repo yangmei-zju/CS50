@@ -10,8 +10,8 @@ def main():
     # TODO: Read database file into a variable
     database = []
     with open(sys.argv[1], "r") as file1:
-        reader = csv.reader(file1)
-        
+        reader = csv.DictReader(file1)
+
         next(reader)
         for row in reader:
             database.append(row)
