@@ -24,15 +24,15 @@ def main():
 
     # TODO: Find longest match of each STR in DNA sequence
     match = {}
-    str=[ "AGATC", "TTTTTTCT", "AATG", "TCTAG", "GATA", "TATC", "GAAA", "TCTG"]
-    for subsquence in str:
-        match[subsquence] = longest_match(sequence, subsequence)
+    STRs=["AGATC", "TTTTTTCT", "AATG", "TCTAG", "GATA", "TATC", "GAAA", "TCTG"]
+    for str in STRs:
+        match[str] = longest_match(sequence, str)
 
     # TODO: Check database for matching profiles
     check = 0
     for individual in database:
-        for subsequence in str:
-            if int(individual[subsequence]) != match[subsquence]:
+        for str in STRs:
+            if int(individual[str]) != match[str]:
                 check = 0
                 break
             else:
@@ -46,8 +46,7 @@ def main():
 
     if check == 0:
         print("No match")
-
-
+        
     return
 
 
