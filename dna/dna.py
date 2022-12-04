@@ -27,6 +27,7 @@ def main():
         for string in reader:
                 for character in string:
                     list.append(character)
+                    
         sequence = ','.join(list)
 
     # TODO: Find longest match of each STR in DNA sequence
