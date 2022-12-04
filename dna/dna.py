@@ -30,7 +30,9 @@ def main():
 
     # TODO: Check database for matching profiles
     for individual in database:
-        
+        for subsequence in str:
+            if int(individual[subsequence]) != match[subsquence]:
+                
     return
 
 
