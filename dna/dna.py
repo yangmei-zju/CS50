@@ -21,15 +21,15 @@ def main():
         for string in reader:
             for character in string[0]:
                 sequence.append(character)
-    TTTTTTCT,AATG,TCTAG,GATA,TATC,GAAA,TCTG
+
     # TODO: Find longest match of each STR in DNA sequence
     match = {}
-    match["AGATC"] = longest_match(sequence, "AGATC")
-    match["TTTTTTCT"] = longest_match(sequence, "TTTTTTCT")
-    match["AATG"] = longest_match(sequence, "AATG")
-    match[]
-    # TODO: Check database for matching profiles
+    str=[ "AGATC", "TTTTTTCT", "AATG", "TCTAG", "GATA", "TATC", "GAAA", "TCTG"]
+    for subsquence in str:
+        match[subsquence] = longest_match(sequence, subsequence)
 
+    # TODO: Check database for matching profiles
+    
     return
 
 
