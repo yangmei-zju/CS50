@@ -11,11 +11,14 @@ def main():
     database = []
     with open(sys.argv[1], "r") as file1:
         reader = csv.DictReader(file1)
-
         next(reader)
         for row in reader:
             database.append(row)
 
+        for keys in row:
+            key.append(keys)
+
+        STRs = keys[1:]
     # TODO: Read DNA sequence file into a variable
     sequence = []
     with open(sys.argv[2], "r") as file2:
@@ -26,7 +29,6 @@ def main():
 
     # TODO: Find longest match of each STR in DNA sequence
     match = {}
-    STRs=["AGATC", "TTTTTTCT", "AATG", "TCTAG", "GATA", "TATC", "GAAA", "TCTG"]
     for str in STRs:
         match[str] = longest_match(sequence, str)
 
