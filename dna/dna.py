@@ -29,7 +29,7 @@ def main():
                 for character in string[0]:
                     list.append(character)
 
-        sequence = ','.join(list)
+        sequence = ''.join(list)
 
     # TODO: Find longest match of each STR in DNA sequence
     match = {}
